@@ -1,0 +1,16 @@
+streamlit>=1.28.0
+openai>=1.0.0
+ffmpeg-python>=0.2.0
+# openai-whisper>=20231117
+faster-whisper
+torch==2.1.0
+torchaudio==2.1.0
+numpy>=1.21.0,<2.0
+soundfile>=0.10.3
+demucs @ git+https://github.com/adefossez/demucs.git@main
+dora-search
+einops
+julius>=0.2.3
+lameenc>=1.2
+openunmix
+pyyaml
