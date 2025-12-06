@@ -4,7 +4,6 @@ import streamlit as st
 import sys
 from pathlib import Path
 import tempfile
-import os
 
 # Add project root to path
 project_root = Path(__file__).parent

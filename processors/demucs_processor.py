@@ -41,7 +41,7 @@ def isolate_vocals(
         segment=8 
     )
     
-    original, separated = separator.separate_audio_file(input_audio_path)
+    _, separated = separator.separate_audio_file(input_audio_path)
     
     output_dir.mkdir(parents=True, exist_ok=True)
     

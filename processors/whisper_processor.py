@@ -1,9 +1,11 @@
 """Whisper processor for transcribing vocals with word-level timestamps using faster-whisper."""
 
+from torch.cuda import is_available as is_cuda_available
+from torch.backends.mps import is_available as is_mps_available
 from faster_whisper import WhisperModel
 from pathlib import Path
-from typing import List, Dict, Any, Optional
-import torch
+from typing import Dict, Any, Optional
+
 
 
 def transcribe_vocals(
@@ -33,10 +35,10 @@ def transcribe_vocals(
     model_name = model_map.get(model_size, model_size)
     
     # Detect device: prefer CUDA > MPS > CPU
-    if torch.cuda.is_available():
+    if is_cuda_available():
         device = "cuda"
         compute_type = "float16"
-    elif torch.backends.mps.is_available():
+    elif is_mps_available():
         device = "cpu"  # faster-whisper uses "cpu" for MPS via CTransformers backend
         compute_type = "int8"  # Use int8 quantization for efficiency on MPS
     else:

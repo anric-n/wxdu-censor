@@ -1,6 +1,7 @@
 """FFmpeg processor for silencing vocals and recombining audio."""
 
-import subprocess
+from subprocess import run
+from tempfile import mkstemp
 from pathlib import Path
 from typing import List, Dict, Any, Tuple
 
@@ -59,7 +60,7 @@ def silence_vocals_at_timestamps(
     """
     if not censored_words:
         # No words to censor, just copy the file
-        subprocess.run(
+        run(
             ["ffmpeg", "-y", "-i", str(vocals_path), "-c", "copy", str(output_path)],
             check=True,
             capture_output=True
@@ -83,7 +84,7 @@ def silence_vocals_at_timestamps(
         filter_complex = ",".join(filter_parts)
     
     # Apply filter
-    subprocess.run(
+    run(
         [
             "ffmpeg", "-y",
             "-i", str(vocals_path),
@@ -114,7 +115,7 @@ def recombine_audio(
         Path to the output file
     """
     # Use FFmpeg to mix the two audio tracks
-    subprocess.run(
+    run(
         [
             "ffmpeg", "-y",
             "-i", str(vocals_path),
@@ -149,10 +150,10 @@ def process_censored_audio(
     Returns:
         Path to the output file
     """
-    import tempfile
+
     
     # Create temporary file for silenced vocals
-    temp_vocals = Path(tempfile.mkstemp(suffix=".wav", prefix="censored_vocals_")[1])
+    temp_vocals = Path(mkstemp(suffix=".wav", prefix="censored_vocals_")[1])
     
     try:
         # Silence vocals at censored timestamps

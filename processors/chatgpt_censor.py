@@ -1,7 +1,6 @@
 """ChatGPT processor for identifying words to censor from a music transcript."""
 
-import os
-import json
+from json import loads
 from typing import List, Dict, Any, Optional
 from openai import OpenAI
 from pydantic import BaseModel
@@ -21,7 +20,14 @@ def create_censoring_prompt(
     transcript_words: List[Dict[str, Any]],
     few_shot_examples: Optional[str] = None
 ) -> str:
-    """Create a prompt for ChatGPT to identify words to censor."""
+    """Create a prompt for ChatGPT to identify words to censor.
+    Args:
+        transcript_words: List of word dicts with "word", "start", "end" keys
+        few_shot_examples: Optional string of few-shot examples to include in the prompt
+    Returns:
+        Prompt string
+    """
+
 
     transcript_lines = []
     for word in transcript_words:
@@ -59,7 +65,15 @@ def censor_with_chatgpt(
     model: str = "gpt-5.1",
     api_key: Optional[str] = None
 ) -> List[Dict[str, Any]]:
-    """Use ChatGPT Responses API to identify words to censor."""
+    """Use ChatGPT Responses API to identify words to censor.
+    Args:
+        transcript_words: List of word dicts with "word", "start", "end" keys
+        few_shot_examples: Optional string of few-shot examples to include in the prompt
+        model: ChatGPT model name (default: "gpt-5.1")
+        api_key: OpenAI API key (if None, uses from streamlit secrets)
+    Returns:
+        List of censored word dicts with "word", "start", "end" keys
+    """
 
     if api_key is None:
         api_key = secrets["OPENAI_API_KEY"]
@@ -69,9 +83,7 @@ def censor_with_chatgpt(
             )
 
     client = OpenAI(api_key=api_key)
-
     prompt = create_censoring_prompt(transcript_words, few_shot_examples)
-
 
     try:
         response = client.responses.parse(
@@ -85,7 +97,7 @@ def censor_with_chatgpt(
         else:
             # fallback: try to extract/parse raw JSON text
             try:
-                data = json.loads(response.output_text)
+                data = loads(response.output_text)
                 if isinstance(data, dict) and "words" in data:
                     return data["words"]
                 if isinstance(data, list):
