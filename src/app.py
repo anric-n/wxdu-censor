@@ -3,10 +3,10 @@
 import streamlit as st
 import sys
 from pathlib import Path
-import tempfile
 import logging
 import json
 import shutil
+import tempfile
 import zipfile
 import io
 from typing import Dict, List
@@ -93,12 +93,9 @@ def display_download_table(output_files: Dict[str, List[str]]):
         return
     
     st.markdown("---")
-    st.header("📥 Download Outputs")
+    st.markdown("### 📥 Download Outputs")
     
     num_files = len(output_files["Original Audio"])
-    
-    # Display table using columns
-    st.markdown("### Downloads Table")
     
     # Create header
     col_names = ["File"] + list(output_files.keys())
@@ -414,30 +411,32 @@ with tab2:
     
     default_examples = """Example 1:
 Input transcript:
-[0.5s-0.8s] hello
-[1.0s-1.3s] world
-[1.5s-1.8s] damn
-[2.0s-2.3s] this
-[2.5s-2.8s] is
-[3.0s-3.3s] great
+[0.5s-0.8s] you
+[1.0s-1.3s] should
+[1.5s-1.8s] go
+[2.0s-2.3s] and
+[2.5s-2.8s] fuck
+[3.0s-3.3s] yourself
 
 Output JSON:
-[
-  {"word": "damn", "start": 1.5, "end": 1.8}
-]
+{
+  "words": [
+    { "word": "fuck", "start": 2.5, "end": 2.8 }
+  ]
+}
 
 Example 2:
 Input transcript:
 [0.2s-0.5s] what
 [0.6s-0.9s] the
-[1.0s-1.4s] hell
+[1.0s-1.4s] frick
 [1.5s-1.8s] is
 [2.0s-2.3s] this
 
 Output JSON:
-[
-  {"word": "hell", "start": 1.0, "end": 1.4}
-]"""
+{
+  "words": []
+}"""
     
     few_shot_examples = st.text_area(
         "Few-shot Examples",

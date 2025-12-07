@@ -41,6 +41,12 @@ def create_censoring_prompt(
         "that should be censored in a music transcript based on profanity, explicit content, "
         "or inappropriate language."
     ]
+    
+    prompt_parts.append(
+        "\n## Instructions:\n"
+        "Analyze the transcript and identify words that should be censored. "
+        "Return ONLY a JSON object of the form: { \"words\": [ { \"word\": string, \"start\": number, \"end\": number } ] }\n"
+    )
 
     if few_shot_examples:
         prompt_parts.append("\n## Few-shot Examples:\n" + few_shot_examples)
@@ -50,11 +56,7 @@ def create_censoring_prompt(
 
     prompt_parts.append(transcript_text)
 
-    prompt_parts.append(
-        "\n## Instructions:\n"
-        "Analyze the transcript and identify words that should be censored. "
-        "Return ONLY a JSON object of the form: { \"words\": [ { \"word\": string, \"start\": number, \"end\": number } ] }\n"
-    )
+
 
     return "\n".join(prompt_parts)
 
