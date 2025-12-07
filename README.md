@@ -1,4 +1,4 @@
-### Music Autocensor Web App
+### WXDU Music Autocensorer
 
 ## What it Does:
 This is a Streamlit web application that automatically censors music. Users can upload audio files of explicit music and retrieve censored audio files, where expicit words have been silenced from the vocals. 
@@ -35,7 +35,7 @@ The app uses Demucs to isolate vocals, Whisper to transcribe the vocals with tim
 5. **Run the app**:
    From the `project` directory:
    ```bash
-   streamlit run app.py
+   streamlit run src/app.py
    ```
    The app will open in your browser at `http://localhost:8501`
 

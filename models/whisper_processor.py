@@ -5,7 +5,19 @@ from torch.backends.mps import is_available as is_mps_available
 from faster_whisper import WhisperModel
 from pathlib import Path
 from typing import Dict, Any, Optional
+import logging
 
+# Module logger
+logger = logging.getLogger(__name__)
+# Ensure there's a stdout handler so logs are visible in the Streamlit server terminal
+if not logger.handlers:
+    import sys
+    sh = logging.StreamHandler(sys.stdout)
+    sh.setLevel(logging.INFO)
+    fmt = logging.Formatter("%(asctime)s %(levelname)s %(name)s: %(message)s")
+    sh.setFormatter(fmt)
+    logger.addHandler(sh)
+    logger.propagate = False
 
 
 def transcribe_vocals(
@@ -46,6 +58,7 @@ def transcribe_vocals(
         compute_type = "float32"
     
     # Load faster-whisper model
+    logger.info("Device used: %s", type(device))
     model = WhisperModel(model_name, device=device, compute_type=compute_type)
     
     # Transcribe with word-level timestamps in batched fashion
