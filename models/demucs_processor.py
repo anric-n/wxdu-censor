@@ -51,20 +51,14 @@ def isolate_vocals(
         device=device,
         progress=False,
         split=True,
-        segment=8 
+        segment=10
     )
 
-    logger.info("Loaded top-level model type: %s", type(separator.model))
-    if hasattr(separator.model, "models"):
-        logger.info("Top-level model contains %d submodels", len(separator.model.models))
-    # Some Demucs variants (HTDemucs/HDemucs) keep a `use_train_segment` flag
-    # which forces tensors to be reshaped to the training segment length. This
-    # can lead to shape mismatches during inference when chunking/splitting is
-    # used. Disable it on the loaded model to avoid the runtime reshape error.
-    # Disable `use_train_segment` on the loaded model and any submodels.
-    # BagOfModels wraps multiple models; ensure we cover both cases so the
-    # HTDemucs/HDemucs forward method does not try to `.view(...)` to the
-    # training segment length during inference.
+
+    # By default, htdemucs sets  `use_train_segment` to true, which forces input segments to be of fixed size.
+    # This can lead to issues when processing audio files of arbitrary lengths.
+    # htdemucs is stored by itself as a submodel in a BagOfModels
+    # The code below disables `use_train_segment` for htdemucs.
     model_obj = separator.model
     models_to_update = []
     if hasattr(model_obj, "models"):
@@ -76,18 +70,13 @@ def isolate_vocals(
         models_to_update = [model_obj]
 
     for i, m in enumerate(models_to_update):
-        logger.info("Submodel[%d] type: %s", i, type(m))
-        if hasattr(m, "segment"):
-            logger.info("Submodel[%d] segment: %s", i, getattr(m, "segment"))
         if hasattr(m, "use_train_segment"):
-            logger.info("Submodel[%d] use_train_segment before: %s", i, getattr(m, "use_train_segment"))
             try:
                 m.use_train_segment = False
             except Exception:
                 logger.exception("Failed to disable use_train_segment on submodel[%d]", i)
-            else:
-                logger.info("Submodel[%d] use_train_segment after: %s", i, getattr(m, "use_train_segment"))
     
+
     _, separated = separator.separate_audio_file(input_audio_path)
     
     output_dir.mkdir(parents=True, exist_ok=True)
