@@ -1,0 +1,2 @@
+file,demucs_time,whisper_time,wer,substitutions,deletions,insertions,correct_matches,total_actual_words,start_mse,end_mse,matched_words_with_timing,avg_start_diff,avg_end_diff
+1_Freak_-_Automatisch_Gekommen,21.44447649992071,92.01986724999733,0.18528610354223432,56,0,12,311,367,0.03488836407324648,0.06431469100609044,311,0.10931110099903589,0.09356129563633472

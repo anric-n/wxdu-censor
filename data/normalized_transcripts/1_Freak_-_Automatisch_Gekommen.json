@@ -1,0 +1,3711 @@
+{
+  "whisper": [
+    {
+      "word": "ich",
+      "start": 20.959999999999997,
+      "end": 21.86
+    },
+    {
+      "word": "würde",
+      "start": 21.86,
+      "end": 22.04
+    },
+    {
+      "word": "so",
+      "start": 22.04,
+      "end": 22.18
+    },
+    {
+      "word": "gerne",
+      "start": 22.18,
+      "end": 22.4
+    },
+    {
+      "word": "meinen",
+      "start": 22.4,
+      "end": 22.72
+    },
+    {
+      "word": "namen",
+      "start": 22.72,
+      "end": 23.2
+    },
+    {
+      "word": "verlieren",
+      "start": 23.2,
+      "end": 24.46
+    },
+    {
+      "word": "das",
+      "start": 24.46,
+      "end": 25.08
+    },
+    {
+      "word": "wäre",
+      "start": 25.08,
+      "end": 25.36
+    },
+    {
+      "word": "schon",
+      "start": 25.36,
+      "end": 25.8
+    },
+    {
+      "word": "unweg",
+      "start": 25.8,
+      "end": 26.26
+    },
+    {
+      "word": "vollkommen",
+      "start": 26.26,
+      "end": 26.88
+    },
+    {
+      "word": "in",
+      "start": 26.88,
+      "end": 27.02
+    },
+    {
+      "word": "unerkannte",
+      "start": 27.02,
+      "end": 27.5
+    },
+    {
+      "word": "straßen",
+      "start": 27.5,
+      "end": 27.94
+    },
+    {
+      "word": "marschieren",
+      "start": 27.94,
+      "end": 29.12
+    },
+    {
+      "word": "no",
+      "start": 29.12,
+      "end": 29.84
+    },
+    {
+      "word": "you",
+      "start": 30.06,
+      "end": 30.18
+    },
+    {
+      "word": "dont",
+      "start": 30.18,
+      "end": 30.56
+    },
+    {
+      "word": "know",
+      "start": 30.56,
+      "end": 30.84
+    },
+    {
+      "word": "me",
+      "start": 30.84,
+      "end": 31.16
+    },
+    {
+      "word": "es",
+      "start": 31.16,
+      "end": 31.48
+    },
+    {
+      "word": "würde",
+      "start": 31.48,
+      "end": 31.7
+    },
+    {
+      "word": "niemand",
+      "start": 31.7,
+      "end": 32.04
+    },
+    {
+      "word": "danach",
+      "start": 32.04,
+      "end": 32.28
+    },
+    {
+      "word": "fragen",
+      "start": 32.28,
+      "end": 32.8
+    },
+    {
+      "word": "was",
+      "start": 32.84,
+      "end": 33.22
+    },
+    {
+      "word": "geht",
+      "start": 33.22,
+      "end": 33.72
+    },
+    {
+      "word": "alter",
+      "start": 33.72,
+      "end": 34.7
+    },
+    {
+      "word": "scheiß",
+      "start": 34.72,
+      "end": 35.06
+    },
+    {
+      "word": "auf",
+      "start": 35.06,
+      "end": 35.24
+    },
+    {
+      "word": "mein",
+      "start": 35.24,
+      "end": 35.38
+    },
+    {
+      "word": "smartphone",
+      "start": 35.38,
+      "end": 35.96
+    },
+    {
+      "word": "und",
+      "start": 35.96,
+      "end": 36.44
+    },
+    {
+      "word": "ich",
+      "start": 36.44,
+      "end": 36.62
+    },
+    {
+      "word": "hätte",
+      "start": 36.62,
+      "end": 36.78
+    },
+    {
+      "word": "endlich",
+      "start": 36.78,
+      "end": 37.14
+    },
+    {
+      "word": "zeit",
+      "start": 37.14,
+      "end": 37.38
+    },
+    {
+      "word": "zu",
+      "start": 37.38,
+      "end": 37.68
+    },
+    {
+      "word": "verstehen",
+      "start": 37.68,
+      "end": 38.38
+    },
+    {
+      "word": "ich",
+      "start": 38.38,
+      "end": 39.42
+    },
+    {
+      "word": "muss",
+      "start": 39.42,
+      "end": 39.58
+    },
+    {
+      "word": "einfach",
+      "start": 39.58,
+      "end": 39.96
+    },
+    {
+      "word": "mal",
+      "start": 39.96,
+      "end": 40.26
+    },
+    {
+      "word": "da",
+      "start": 40.26,
+      "end": 40.38
+    },
+    {
+      "word": "ich",
+      "start": 40.38,
+      "end": 40.72
+    },
+    {
+      "word": "schließ",
+      "start": 40.72,
+      "end": 41.18
+    },
+    {
+      "word": "mich",
+      "start": 41.18,
+      "end": 41.56
+    },
+    {
+      "word": "ein",
+      "start": 41.56,
+      "end": 42.42
+    },
+    {
+      "word": "und",
+      "start": 42.42,
+      "end": 43.12
+    },
+    {
+      "word": "komm",
+      "start": 43.12,
+      "end": 43.58
+    },
+    {
+      "word": "nicht",
+      "start": 43.58,
+      "end": 44.02
+    },
+    {
+      "word": "raus",
+      "start": 44.02,
+      "end": 44.48
+    },
+    {
+      "word": "ich",
+      "start": 44.48,
+      "end": 44.92
+    },
+    {
+      "word": "bin",
+      "start": 44.92,
+      "end": 45.22
+    },
+    {
+      "word": "ein",
+      "start": 45.22,
+      "end": 45.58
+    },
+    {
+      "word": "freak",
+      "start": 45.58,
+      "end": 46.22
+    },
+    {
+      "word": "ein",
+      "start": 46.38,
+      "end": 46.72
+    },
+    {
+      "word": "freak",
+      "start": 46.72,
+      "end": 47.3
+    },
+    {
+      "word": "rede",
+      "start": 47.3,
+      "end": 47.88
+    },
+    {
+      "word": "ständig",
+      "start": 47.88,
+      "end": 48.2
+    },
+    {
+      "word": "von",
+      "start": 48.2,
+      "end": 48.4
+    },
+    {
+      "word": "meinem",
+      "start": 48.4,
+      "end": 48.56
+    },
+    {
+      "word": "wunderschönen",
+      "start": 48.56,
+      "end": 49.18
+    },
+    {
+      "word": "glied",
+      "start": 49.18,
+      "end": 49.44
+    },
+    {
+      "word": "ich",
+      "start": 49.44,
+      "end": 49.76
+    },
+    {
+      "word": "bin",
+      "start": 49.76,
+      "end": 49.96
+    },
+    {
+      "word": "ein",
+      "start": 49.96,
+      "end": 50.38
+    },
+    {
+      "word": "freak",
+      "start": 50.38,
+      "end": 50.92
+    },
+    {
+      "word": "ein",
+      "start": 51.22,
+      "end": 51.48
+    },
+    {
+      "word": "freak",
+      "start": 51.48,
+      "end": 52.16
+    },
+    {
+      "word": "glaub",
+      "start": 52.16,
+      "end": 52.64
+    },
+    {
+      "word": "mir",
+      "start": 52.64,
+      "end": 52.78
+    },
+    {
+      "word": "nicht",
+      "start": 52.78,
+      "end": 52.92
+    },
+    {
+      "word": "dass",
+      "start": 52.96,
+      "end": 53.08
+    },
+    {
+      "word": "es",
+      "start": 53.08,
+      "end": 53.2
+    },
+    {
+      "word": "für",
+      "start": 53.2,
+      "end": 53.34
+    },
+    {
+      "word": "mich",
+      "start": 53.34,
+      "end": 53.52
+    },
+    {
+      "word": "hier",
+      "start": 53.52,
+      "end": 53.66
+    },
+    {
+      "word": "etwas",
+      "start": 53.66,
+      "end": 53.94
+    },
+    {
+      "word": "gibt",
+      "start": 53.94,
+      "end": 54.2
+    },
+    {
+      "word": "ich",
+      "start": 54.2,
+      "end": 54.52
+    },
+    {
+      "word": "bin",
+      "start": 54.52,
+      "end": 54.76
+    },
+    {
+      "word": "ein",
+      "start": 54.76,
+      "end": 55.16
+    },
+    {
+      "word": "freak",
+      "start": 55.16,
+      "end": 55.82
+    },
+    {
+      "word": "ein",
+      "start": 56.02,
+      "end": 56.28
+    },
+    {
+      "word": "freak",
+      "start": 56.28,
+      "end": 56.9
+    },
+    {
+      "word": "rede",
+      "start": 56.9,
+      "end": 57.46
+    },
+    {
+      "word": "ständig",
+      "start": 57.46,
+      "end": 57.76
+    },
+    {
+      "word": "nur",
+      "start": 57.76,
+      "end": 57.98
+    },
+    {
+      "word": "von",
+      "start": 57.98,
+      "end": 58.12
+    },
+    {
+      "word": "meiner",
+      "start": 58.12,
+      "end": 58.4
+    },
+    {
+      "word": "scheiß",
+      "start": 58.4,
+      "end": 58.62
+    },
+    {
+      "word": "musik",
+      "start": 58.62,
+      "end": 58.8
+    },
+    {
+      "word": "ich",
+      "start": 58.8,
+      "end": 59.34
+    },
+    {
+      "word": "bin",
+      "start": 59.34,
+      "end": 59.54
+    },
+    {
+      "word": "ein",
+      "start": 59.54,
+      "end": 59.92
+    },
+    {
+      "word": "freak",
+      "start": 59.92,
+      "end": 60.52
+    },
+    {
+      "word": "ein",
+      "start": 60.62,
+      "end": 61.08
+    },
+    {
+      "word": "freak",
+      "start": 61.08,
+      "end": 61.7
+    },
+    {
+      "word": "glaube",
+      "start": 61.7,
+      "end": 62.32
+    },
+    {
+      "word": "nicht",
+      "start": 62.32,
+      "end": 62.5
+    },
+    {
+      "word": "dass",
+      "start": 62.62,
+      "end": 62.64
+    },
+    {
+      "word": "mich",
+      "start": 62.64,
+      "end": 62.78
+    },
+    {
+      "word": "von",
+      "start": 62.78,
+      "end": 62.96
+    },
+    {
+      "word": "euch",
+      "start": 62.96,
+      "end": 63.14
+    },
+    {
+      "word": "jemand",
+      "start": 63.14,
+      "end": 63.38
+    },
+    {
+      "word": "bezieht",
+      "start": 63.38,
+      "end": 63.74
+    },
+    {
+      "word": "ich",
+      "start": 63.74,
+      "end": 64.14
+    },
+    {
+      "word": "bin",
+      "start": 64.14,
+      "end": 64.38
+    },
+    {
+      "word": "ein",
+      "start": 64.38,
+      "end": 64.72
+    },
+    {
+      "word": "freak",
+      "start": 64.72,
+      "end": 65.1
+    },
+    {
+      "word": "ich",
+      "start": 65.1,
+      "end": 65.16
+    },
+    {
+      "word": "würde",
+      "start": 65.16,
+      "end": 65.22
+    },
+    {
+      "word": "so",
+      "start": 65.22,
+      "end": 65.38
+    },
+    {
+      "word": "gerne",
+      "start": 65.38,
+      "end": 65.54
+    },
+    {
+      "word": "den",
+      "start": 65.54,
+      "end": 65.74
+    },
+    {
+      "word": "ganzen",
+      "start": 65.74,
+      "end": 65.92
+    },
+    {
+      "word": "tag",
+      "start": 65.92,
+      "end": 66.24
+    },
+    {
+      "word": "musizieren",
+      "start": 66.24,
+      "end": 67.54
+    },
+    {
+      "word": "zum",
+      "start": 67.54,
+      "end": 68.22
+    },
+    {
+      "word": "betoast",
+      "start": 68.22,
+      "end": 68.7
+    },
+    {
+      "word": "und",
+      "start": 68.7,
+      "end": 68.9
+    },
+    {
+      "word": "polegame",
+      "start": 68.9,
+      "end": 69.6
+    },
+    {
+      "word": "wird",
+      "start": 69.6,
+      "end": 69.88
+    },
+    {
+      "word": "das",
+      "start": 69.88,
+      "end": 70.06
+    },
+    {
+      "word": "nicht",
+      "start": 70.06,
+      "end": 70.18
+    },
+    {
+      "word": "viel",
+      "start": 70.18,
+      "end": 70.34
+    },
+    {
+      "word": "gern",
+      "start": 70.34,
+      "end": 70.46
+    },
+    {
+      "word": "bei",
+      "start": 70.46,
+      "end": 70.6
+    },
+    {
+      "word": "mir",
+      "start": 70.6,
+      "end": 70.78
+    },
+    {
+      "word": "oral",
+      "start": 70.78,
+      "end": 71.2
+    },
+    {
+      "word": "probieren",
+      "start": 71.2,
+      "end": 72.3
+    },
+    {
+      "word": "könnte",
+      "start": 72.3,
+      "end": 73.14
+    },
+    {
+      "word": "sofort",
+      "start": 73.14,
+      "end": 73.64
+    },
+    {
+      "word": "losgehen",
+      "start": 73.64,
+      "end": 74.38
+    },
+    {
+      "word": "hört",
+      "start": 74.38,
+      "end": 74.66
+    },
+    {
+      "word": "sich",
+      "start": 74.66,
+      "end": 74.78
+    },
+    {
+      "word": "das",
+      "start": 74.78,
+      "end": 74.98
+    },
+    {
+      "word": "an",
+      "start": 74.98,
+      "end": 75.2
+    },
+    {
+      "word": "als",
+      "start": 75.24,
+      "end": 75.3
+    },
+    {
+      "word": "würd",
+      "start": 75.3,
+      "end": 75.5
+    },
+    {
+      "word": "ich",
+      "start": 75.5,
+      "end": 75.54
+    },
+    {
+      "word": "spanisch",
+      "start": 75.54,
+      "end": 76.14
+    },
+    {
+      "word": "verstehen",
+      "start": 76.14,
+      "end": 76.82
+    },
+    {
+      "word": "und",
+      "start": 77.36,
+      "end": 77.86
+    },
+    {
+      "word": "ein",
+      "start": 77.86,
+      "end": 78.04
+    },
+    {
+      "word": "lockkommen",
+      "start": 78.04,
+      "end": 78.48
+    },
+    {
+      "word": "in",
+      "start": 78.48,
+      "end": 78.78
+    },
+    {
+      "word": "der",
+      "start": 78.78,
+      "end": 78.8
+    },
+    {
+      "word": "sock",
+      "start": 78.8,
+      "end": 79.08
+    },
+    {
+      "word": "ich",
+      "start": 79.08,
+      "end": 79.44
+    },
+    {
+      "word": "zeig",
+      "start": 79.44,
+      "end": 79.66
+    },
+    {
+      "word": "dir",
+      "start": 79.66,
+      "end": 79.76
+    },
+    {
+      "word": "einfach",
+      "start": 79.76,
+      "end": 80.04
+    },
+    {
+      "word": "meine",
+      "start": 80.04,
+      "end": 80.34
+    },
+    {
+      "word": "penis",
+      "start": 80.34,
+      "end": 80.96
+    },
+    {
+      "word": "und",
+      "start": 80.96,
+      "end": 81.26
+    },
+    {
+      "word": "geh",
+      "start": 81.26,
+      "end": 81.52
+    },
+    {
+      "word": "ich",
+      "start": 102.2,
+      "end": 103.12
+    },
+    {
+      "word": "bin",
+      "start": 103.12,
+      "end": 103.4
+    },
+    {
+      "word": "ein",
+      "start": 103.4,
+      "end": 103.4
+    },
+    {
+      "word": "freak",
+      "start": 103.4,
+      "end": 103.4
+    },
+    {
+      "word": "ein",
+      "start": 103.4,
+      "end": 103.4
+    },
+    {
+      "word": "freak",
+      "start": 103.4,
+      "end": 103.4
+    },
+    {
+      "word": "ich",
+      "start": 103.4,
+      "end": 103.4
+    },
+    {
+      "word": "schließ",
+      "start": 103.4,
+      "end": 103.58
+    },
+    {
+      "word": "mich",
+      "start": 103.58,
+      "end": 103.92
+    },
+    {
+      "word": "ein",
+      "start": 103.92,
+      "end": 104.84
+    },
+    {
+      "word": "und",
+      "start": 104.84,
+      "end": 105.52
+    },
+    {
+      "word": "komm",
+      "start": 105.52,
+      "end": 105.98
+    },
+    {
+      "word": "nicht",
+      "start": 105.98,
+      "end": 106.4
+    },
+    {
+      "word": "raus",
+      "start": 106.4,
+      "end": 106.9
+    },
+    {
+      "word": "ich",
+      "start": 106.9,
+      "end": 107.34
+    },
+    {
+      "word": "bin",
+      "start": 107.34,
+      "end": 107.6
+    },
+    {
+      "word": "ein",
+      "start": 107.6,
+      "end": 107.98
+    },
+    {
+      "word": "freak",
+      "start": 107.98,
+      "end": 108.6
+    },
+    {
+      "word": "ein",
+      "start": 108.68,
+      "end": 109.08
+    },
+    {
+      "word": "freak",
+      "start": 109.08,
+      "end": 109.72
+    },
+    {
+      "word": "rede",
+      "start": 109.72,
+      "end": 110.28
+    },
+    {
+      "word": "ständig",
+      "start": 110.28,
+      "end": 110.58
+    },
+    {
+      "word": "von",
+      "start": 110.58,
+      "end": 110.8
+    },
+    {
+      "word": "meinem",
+      "start": 110.8,
+      "end": 110.96
+    },
+    {
+      "word": "wunderschönen",
+      "start": 110.96,
+      "end": 111.54
+    },
+    {
+      "word": "glied",
+      "start": 111.54,
+      "end": 111.84
+    },
+    {
+      "word": "ich",
+      "start": 111.84,
+      "end": 112.14
+    },
+    {
+      "word": "bin",
+      "start": 112.14,
+      "end": 112.4
+    },
+    {
+      "word": "ein",
+      "start": 112.4,
+      "end": 112.72
+    },
+    {
+      "word": "freak",
+      "start": 112.72,
+      "end": 113.32
+    },
+    {
+      "word": "ein",
+      "start": 113.48,
+      "end": 113.88
+    },
+    {
+      "word": "freak",
+      "start": 113.88,
+      "end": 114.5
+    },
+    {
+      "word": "glaube",
+      "start": 114.5,
+      "end": 115.1
+    },
+    {
+      "word": "nicht",
+      "start": 115.1,
+      "end": 115.3
+    },
+    {
+      "word": "dass",
+      "start": 115.36,
+      "end": 115.48
+    },
+    {
+      "word": "es",
+      "start": 115.48,
+      "end": 115.6
+    },
+    {
+      "word": "für",
+      "start": 115.6,
+      "end": 115.74
+    },
+    {
+      "word": "mich",
+      "start": 115.74,
+      "end": 115.9
+    },
+    {
+      "word": "hier",
+      "start": 115.9,
+      "end": 116.06
+    },
+    {
+      "word": "etwas",
+      "start": 116.06,
+      "end": 116.32
+    },
+    {
+      "word": "gibt",
+      "start": 116.32,
+      "end": 116.6
+    },
+    {
+      "word": "ich",
+      "start": 116.6,
+      "end": 116.92
+    },
+    {
+      "word": "bin",
+      "start": 116.92,
+      "end": 117.18
+    },
+    {
+      "word": "ein",
+      "start": 117.18,
+      "end": 117.52
+    },
+    {
+      "word": "freak",
+      "start": 117.52,
+      "end": 118.12
+    },
+    {
+      "word": "ein",
+      "start": 118.4,
+      "end": 118.68
+    },
+    {
+      "word": "freak",
+      "start": 118.68,
+      "end": 119.38
+    },
+    {
+      "word": "rede",
+      "start": 119.38,
+      "end": 119.86
+    },
+    {
+      "word": "ständig",
+      "start": 119.86,
+      "end": 120.14
+    },
+    {
+      "word": "nur",
+      "start": 120.14,
+      "end": 120.36
+    },
+    {
+      "word": "von",
+      "start": 120.36,
+      "end": 120.52
+    },
+    {
+      "word": "meiner",
+      "start": 120.52,
+      "end": 120.8
+    },
+    {
+      "word": "scheiß",
+      "start": 120.8,
+      "end": 121.02
+    },
+    {
+      "word": "musik",
+      "start": 121.02,
+      "end": 121.32
+    },
+    {
+      "word": "ich",
+      "start": 121.32,
+      "end": 121.74
+    },
+    {
+      "word": "bin",
+      "start": 121.74,
+      "end": 121.98
+    },
+    {
+      "word": "ein",
+      "start": 121.98,
+      "end": 122.32
+    },
+    {
+      "word": "freak",
+      "start": 122.32,
+      "end": 122.92
+    },
+    {
+      "word": "ein",
+      "start": 123.04,
+      "end": 123.46
+    },
+    {
+      "word": "freak",
+      "start": 123.46,
+      "end": 124.12
+    },
+    {
+      "word": "glaube",
+      "start": 124.12,
+      "end": 124.7
+    },
+    {
+      "word": "nicht",
+      "start": 124.7,
+      "end": 124.9
+    },
+    {
+      "word": "dass",
+      "start": 124.94,
+      "end": 125.06
+    },
+    {
+      "word": "mich",
+      "start": 125.06,
+      "end": 125.2
+    },
+    {
+      "word": "von",
+      "start": 125.2,
+      "end": 125.36
+    },
+    {
+      "word": "euch",
+      "start": 125.36,
+      "end": 125.54
+    },
+    {
+      "word": "jemand",
+      "start": 125.54,
+      "end": 125.78
+    },
+    {
+      "word": "bezieht",
+      "start": 125.78,
+      "end": 126.24
+    },
+    {
+      "word": "ich",
+      "start": 126.24,
+      "end": 126.56
+    },
+    {
+      "word": "bin",
+      "start": 126.56,
+      "end": 126.82
+    },
+    {
+      "word": "ein",
+      "start": 126.82,
+      "end": 127.14
+    },
+    {
+      "word": "freak",
+      "start": 127.14,
+      "end": 127.5
+    },
+    {
+      "word": "wenn",
+      "start": 127.5,
+      "end": 127.6
+    },
+    {
+      "word": "du",
+      "start": 127.6,
+      "end": 127.76
+    },
+    {
+      "word": "sprichst",
+      "start": 127.76,
+      "end": 128.08
+    },
+    {
+      "word": "bin",
+      "start": 128.14,
+      "end": 128.24
+    },
+    {
+      "word": "ich",
+      "start": 128.24,
+      "end": 128.4
+    },
+    {
+      "word": "in",
+      "start": 128.4,
+      "end": 128.58
+    },
+    {
+      "word": "gedankenakt",
+      "start": 128.58,
+      "end": 129.24
+    },
+    {
+      "word": "ich",
+      "start": 129.24,
+      "end": 129.86
+    },
+    {
+      "word": "trage",
+      "start": 129.86,
+      "end": 130.16
+    },
+    {
+      "word": "nur",
+      "start": 130.16,
+      "end": 130.32
+    },
+    {
+      "word": "meine",
+      "start": 130.32,
+      "end": 130.6
+    },
+    {
+      "word": "gitarre",
+      "start": 130.6,
+      "end": 131.22
+    },
+    {
+      "word": "ich",
+      "start": 131.76,
+      "end": 132.28
+    },
+    {
+      "word": "hör",
+      "start": 132.28,
+      "end": 132.44
+    },
+    {
+      "word": "nicht",
+      "start": 132.44,
+      "end": 132.62
+    },
+    {
+      "word": "hin",
+      "start": 132.62,
+      "end": 132.78
+    },
+    {
+      "word": "ob",
+      "start": 132.8,
+      "end": 132.9
+    },
+    {
+      "word": "irgendjemand",
+      "start": 132.9,
+      "end": 133.46
+    },
+    {
+      "word": "etwas",
+      "start": 133.46,
+      "end": 133.72
+    },
+    {
+      "word": "sagt",
+      "start": 133.72,
+      "end": 134.12
+    },
+    {
+      "word": "ich",
+      "start": 134.12,
+      "end": 134.64
+    },
+    {
+      "word": "glaub",
+      "start": 134.64,
+      "end": 134.84
+    },
+    {
+      "word": "die",
+      "start": 134.94,
+      "end": 134.98
+    },
+    {
+      "word": "reden",
+      "start": 134.98,
+      "end": 135.22
+    },
+    {
+      "word": "über",
+      "start": 135.22,
+      "end": 135.52
+    },
+    {
+      "word": "mathe",
+      "start": 135.52,
+      "end": 135.98
+    },
+    {
+      "word": "wenn",
+      "start": 136.56,
+      "end": 137.08
+    },
+    {
+      "word": "du",
+      "start": 137.08,
+      "end": 137.3
+    },
+    {
+      "word": "sprichst",
+      "start": 137.3,
+      "end": 137.68
+    },
+    {
+      "word": "bin",
+      "start": 137.7,
+      "end": 137.88
+    },
+    {
+      "word": "ich",
+      "start": 137.88,
+      "end": 138.0
+    },
+    {
+      "word": "in",
+      "start": 138.0,
+      "end": 138.2
+    },
+    {
+      "word": "gedankenakt",
+      "start": 138.2,
+      "end": 138.9
+    },
+    {
+      "word": "ich",
+      "start": 138.9,
+      "end": 139.46
+    },
+    {
+      "word": "trage",
+      "start": 139.46,
+      "end": 139.76
+    },
+    {
+      "word": "nur",
+      "start": 139.76,
+      "end": 139.92
+    },
+    {
+      "word": "meine",
+      "start": 139.92,
+      "end": 140.18
+    },
+    {
+      "word": "gitarre",
+      "start": 140.18,
+      "end": 140.8
+    },
+    {
+      "word": "ich",
+      "start": 141.38,
+      "end": 141.9
+    },
+    {
+      "word": "hör",
+      "start": 141.9,
+      "end": 142.08
+    },
+    {
+      "word": "nicht",
+      "start": 142.08,
+      "end": 142.22
+    },
+    {
+      "word": "hin",
+      "start": 142.22,
+      "end": 142.4
+    },
+    {
+      "word": "ob",
+      "start": 142.4,
+      "end": 142.5
+    },
+    {
+      "word": "irgendjemand",
+      "start": 142.5,
+      "end": 143.06
+    },
+    {
+      "word": "etwas",
+      "start": 143.06,
+      "end": 143.32
+    },
+    {
+      "word": "sagt",
+      "start": 143.32,
+      "end": 143.72
+    },
+    {
+      "word": "ich",
+      "start": 143.72,
+      "end": 144.26
+    },
+    {
+      "word": "glaub",
+      "start": 144.26,
+      "end": 144.42
+    },
+    {
+      "word": "ich",
+      "start": 144.52,
+      "end": 144.58
+    },
+    {
+      "word": "sitze",
+      "start": 144.58,
+      "end": 144.88
+    },
+    {
+      "word": "in",
+      "start": 144.88,
+      "end": 145.04
+    },
+    {
+      "word": "der",
+      "start": 145.04,
+      "end": 145.14
+    },
+    {
+      "word": "kacke",
+      "start": 145.14,
+      "end": 145.48
+    },
+    {
+      "word": "ich",
+      "start": 145.48,
+      "end": 145.74
+    },
+    {
+      "word": "bin",
+      "start": 145.74,
+      "end": 146.0
+    },
+    {
+      "word": "ein",
+      "start": 146.0,
+      "end": 146.36
+    },
+    {
+      "word": "freak",
+      "start": 146.36,
+      "end": 147.0
+    },
+    {
+      "word": "ein",
+      "start": 147.02,
+      "end": 147.48
+    },
+    {
+      "word": "freak",
+      "start": 147.48,
+      "end": 148.12
+    },
+    {
+      "word": "rede",
+      "start": 148.12,
+      "end": 148.68
+    },
+    {
+      "word": "ständig",
+      "start": 148.68,
+      "end": 149.0
+    },
+    {
+      "word": "von",
+      "start": 149.0,
+      "end": 149.2
+    },
+    {
+      "word": "meinem",
+      "start": 149.2,
+      "end": 149.34
+    },
+    {
+      "word": "wunderschönen",
+      "start": 149.34,
+      "end": 149.98
+    },
+    {
+      "word": "glied",
+      "start": 149.98,
+      "end": 150.26
+    },
+    {
+      "word": "ich",
+      "start": 150.26,
+      "end": 150.56
+    },
+    {
+      "word": "bin",
+      "start": 150.56,
+      "end": 150.8
+    },
+    {
+      "word": "ein",
+      "start": 150.8,
+      "end": 151.14
+    },
+    {
+      "word": "freak",
+      "start": 151.14,
+      "end": 151.74
+    },
+    {
+      "word": "ein",
+      "start": 151.88,
+      "end": 152.26
+    },
+    {
+      "word": "freak",
+      "start": 152.26,
+      "end": 152.9
+    },
+    {
+      "word": "glaube",
+      "start": 152.9,
+      "end": 153.5
+    },
+    {
+      "word": "nicht",
+      "start": 153.5,
+      "end": 153.7
+    },
+    {
+      "word": "dass",
+      "start": 153.72,
+      "end": 153.88
+    },
+    {
+      "word": "es",
+      "start": 153.88,
+      "end": 154.0
+    },
+    {
+      "word": "für",
+      "start": 154.0,
+      "end": 154.14
+    },
+    {
+      "word": "mich",
+      "start": 154.14,
+      "end": 154.28
+    },
+    {
+      "word": "hier",
+      "start": 154.28,
+      "end": 154.46
+    },
+    {
+      "word": "etwas",
+      "start": 154.46,
+      "end": 154.72
+    },
+    {
+      "word": "gibt",
+      "start": 154.72,
+      "end": 155.0
+    },
+    {
+      "word": "ich",
+      "start": 155.0,
+      "end": 155.32
+    },
+    {
+      "word": "bin",
+      "start": 155.32,
+      "end": 155.58
+    },
+    {
+      "word": "ein",
+      "start": 155.58,
+      "end": 155.9
+    },
+    {
+      "word": "freak",
+      "start": 155.9,
+      "end": 156.52
+    },
+    {
+      "word": "ein",
+      "start": 156.56,
+      "end": 157.08
+    },
+    {
+      "word": "freak",
+      "start": 157.08,
+      "end": 157.7
+    },
+    {
+      "word": "rede",
+      "start": 157.7,
+      "end": 158.2
+    },
+    {
+      "word": "ständig",
+      "start": 158.2,
+      "end": 158.54
+    },
+    {
+      "word": "nur",
+      "start": 158.54,
+      "end": 158.76
+    },
+    {
+      "word": "von",
+      "start": 158.76,
+      "end": 158.92
+    },
+    {
+      "word": "meiner",
+      "start": 158.92,
+      "end": 159.2
+    },
+    {
+      "word": "scheiß",
+      "start": 159.2,
+      "end": 159.42
+    },
+    {
+      "word": "musik",
+      "start": 159.42,
+      "end": 159.66
+    },
+    {
+      "word": "ich",
+      "start": 159.66,
+      "end": 160.14
+    },
+    {
+      "word": "bin",
+      "start": 160.14,
+      "end": 160.38
+    },
+    {
+      "word": "ein",
+      "start": 160.38,
+      "end": 160.72
+    },
+    {
+      "word": "freak",
+      "start": 160.72,
+      "end": 161.34
+    },
+    {
+      "word": "ein",
+      "start": 161.44,
+      "end": 161.86
+    },
+    {
+      "word": "freak",
+      "start": 161.86,
+      "end": 162.58
+    },
+    {
+      "word": "glaube",
+      "start": 162.58,
+      "end": 163.1
+    },
+    {
+      "word": "nicht",
+      "start": 163.1,
+      "end": 163.3
+    },
+    {
+      "word": "dass",
+      "start": 163.36,
+      "end": 163.46
+    },
+    {
+      "word": "mich",
+      "start": 163.46,
+      "end": 163.58
+    },
+    {
+      "word": "von",
+      "start": 163.58,
+      "end": 163.74
+    },
+    {
+      "word": "euch",
+      "start": 163.74,
+      "end": 163.94
+    },
+    {
+      "word": "jemand",
+      "start": 163.94,
+      "end": 164.14
+    },
+    {
+      "word": "bezieht",
+      "start": 164.14,
+      "end": 164.5
+    },
+    {
+      "word": "ich",
+      "start": 164.5,
+      "end": 164.94
+    },
+    {
+      "word": "bin",
+      "start": 164.94,
+      "end": 165.22
+    },
+    {
+      "word": "ein",
+      "start": 165.22,
+      "end": 165.58
+    },
+    {
+      "word": "freak",
+      "start": 165.58,
+      "end": 166.1
+    },
+    {
+      "word": "ich",
+      "start": 169.10000000000002,
+      "end": 169.74
+    },
+    {
+      "word": "bin",
+      "start": 169.74,
+      "end": 170.02
+    },
+    {
+      "word": "ein",
+      "start": 170.02,
+      "end": 170.36
+    },
+    {
+      "word": "freak",
+      "start": 170.36,
+      "end": 171.0
+    },
+    {
+      "word": "ich",
+      "start": 173.88000000000002,
+      "end": 174.52
+    },
+    {
+      "word": "bin",
+      "start": 174.52,
+      "end": 174.78
+    },
+    {
+      "word": "ein",
+      "start": 174.78,
+      "end": 175.18
+    },
+    {
+      "word": "freak",
+      "start": 175.18,
+      "end": 175.8
+    },
+    {
+      "word": "ich",
+      "start": 178.64000000000001,
+      "end": 179.28
+    },
+    {
+      "word": "bin",
+      "start": 179.28,
+      "end": 179.58
+    },
+    {
+      "word": "ein",
+      "start": 179.58,
+      "end": 179.92
+    },
+    {
+      "word": "freak",
+      "start": 179.92,
+      "end": 180.6
+    },
+    {
+      "word": "glaube",
+      "start": 181.66000000000003,
+      "end": 182.3
+    },
+    {
+      "word": "nicht",
+      "start": 182.3,
+      "end": 182.5
+    },
+    {
+      "word": "dass",
+      "start": 182.56,
+      "end": 182.66
+    },
+    {
+      "word": "mich",
+      "start": 182.66,
+      "end": 182.78
+    },
+    {
+      "word": "von",
+      "start": 182.78,
+      "end": 182.94
+    },
+    {
+      "word": "euch",
+      "start": 182.94,
+      "end": 183.14
+    },
+    {
+      "word": "jemand",
+      "start": 183.14,
+      "end": 183.36
+    },
+    {
+      "word": "bezieht",
+      "start": 183.36,
+      "end": 183.72
+    },
+    {
+      "word": "ich",
+      "start": 183.72,
+      "end": 183.88
+    },
+    {
+      "word": "bin",
+      "start": 183.88,
+      "end": 184.38
+    },
+    {
+      "word": "ein",
+      "start": 184.38,
+      "end": 184.74
+    },
+    {
+      "word": "freak",
+      "start": 184.74,
+      "end": 185.32
+    },
+    {
+      "word": "ich",
+      "start": 185.32,
+      "end": 186.08
+    },
+    {
+      "word": "bin",
+      "start": 186.08,
+      "end": 187.62
+    },
+    {
+      "word": "ein",
+      "start": 187.62,
+      "end": 187.62
+    },
+    {
+      "word": "freak",
+      "start": 187.62,
+      "end": 187.62
+    },
+    {
+      "word": "untertitelung",
+      "start": 187.94,
+      "end": 187.98
+    },
+    {
+      "word": "des",
+      "start": 187.98,
+      "end": 188.0
+    },
+    {
+      "word": "zdf",
+      "start": 188.0,
+      "end": 188.34
+    },
+    {
+      "word": "2020",
+      "start": 188.36,
+      "end": 188.38
+    }
+  ],
+  "actual": [
+    {
+      "text": "ich",
+      "start": 21.7803173065,
+      "end": 21.8920631409
+    },
+    {
+      "text": "würd",
+      "start": 21.8920631409,
+      "end": 22.0535144806
+    },
+    {
+      "text": "so",
+      "start": 22.0535144806,
+      "end": 22.1982765198
+    },
+    {
+      "text": "gerne",
+      "start": 22.1982765198,
+      "end": 22.4943313599
+    },
+    {
+      "text": "meinen",
+      "start": 22.4943313599,
+      "end": 22.7918357849
+    },
+    {
+      "text": "namen",
+      "start": 22.7918357849,
+      "end": 23.2272109985
+    },
+    {
+      "text": "verliern",
+      "start": 23.3360538483,
+      "end": 24.4506130219
+    },
+    {
+      "text": "das",
+      "start": 24.8917922974,
+      "end": 25.1704311371
+    },
+    {
+      "text": "wär",
+      "start": 25.1704311371,
+      "end": 25.4490699768
+    },
+    {
+      "text": "schon",
+      "start": 25.4490699768,
+      "end": 25.7937412262
+    },
+    {
+      "text": "okay",
+      "start": 25.7937412262,
+      "end": 26.3793201447
+    },
+    {
+      "text": "vollkommen",
+      "start": 26.538230896,
+      "end": 26.9017696381
+    },
+    {
+      "text": "unerkannt",
+      "start": 26.9017696381,
+      "end": 27.412607193
+    },
+    {
+      "text": "durch",
+      "start": 27.412607193,
+      "end": 27.5243530273
+    },
+    {
+      "text": "straßen",
+      "start": 27.5243530273,
+      "end": 28.1752376556
+    },
+    {
+      "text": "maschiern",
+      "start": 28.1752376556,
+      "end": 29.2201366425
+    },
+    {
+      "text": "no",
+      "start": 29.694694519,
+      "end": 29.8536052704
+    },
+    {
+      "text": "you",
+      "start": 29.9624481201,
+      "end": 30.2976875305
+    },
+    {
+      "text": "dont",
+      "start": 30.2976875305,
+      "end": 30.5213603973
+    },
+    {
+      "text": "know",
+      "start": 30.5959186554,
+      "end": 30.8985042572
+    },
+    {
+      "text": "me",
+      "start": 30.8985042572,
+      "end": 31.4144210815
+    },
+    {
+      "text": "es",
+      "start": 31.4144210815,
+      "end": 31.5160083771
+    },
+    {
+      "text": "würde",
+      "start": 31.5160083771,
+      "end": 31.7953739166
+    },
+    {
+      "text": "niemand",
+      "start": 31.7953739166,
+      "end": 32.1001358032
+    },
+    {
+      "text": "danach",
+      "start": 32.1001358032,
+      "end": 32.3613586426
+    },
+    {
+      "text": "fragen",
+      "start": 32.3613586426,
+      "end": 32.9904747009
+    },
+    {
+      "text": "was",
+      "start": 32.9904747009,
+      "end": 33.2952384949
+    },
+    {
+      "text": "geht",
+      "start": 33.2952384949,
+      "end": 34.0527877808
+    },
+    {
+      "text": "alter",
+      "start": 34.4903411865,
+      "end": 34.7755088806
+    },
+    {
+      "text": "scheiß",
+      "start": 34.7755088806,
+      "end": 35.1259880066
+    },
+    {
+      "text": "auf",
+      "start": 35.1259880066,
+      "end": 35.2565994263
+    },
+    {
+      "text": "mein",
+      "start": 35.2565994263,
+      "end": 35.3937416077
+    },
+    {
+      "text": "smartphone",
+      "start": 35.3937416077,
+      "end": 36.1164627075
+    },
+    {
+      "text": "und",
+      "start": 36.3363265991,
+      "end": 36.4212226868
+    },
+    {
+      "text": "ich",
+      "start": 36.4952392578,
+      "end": 36.6410865784
+    },
+    {
+      "text": "hätte",
+      "start": 36.6410865784,
+      "end": 36.9008598328
+    },
+    {
+      "text": "endlich",
+      "start": 36.9008598328,
+      "end": 37.1831283569
+    },
+    {
+      "text": "zeit",
+      "start": 37.1831283569,
+      "end": 37.4051704407
+    },
+    {
+      "text": "zu",
+      "start": 37.4581413269,
+      "end": 37.7367782593
+    },
+    {
+      "text": "verstehn",
+      "start": 37.7367782593,
+      "end": 38.9289779663
+    },
+    {
+      "text": "ich",
+      "start": 39.2812690735,
+      "end": 39.4615859985
+    },
+    {
+      "text": "muss",
+      "start": 39.4615859985,
+      "end": 39.6520652771
+    },
+    {
+      "text": "einfach",
+      "start": 39.6520652771,
+      "end": 40.0326538086
+    },
+    {
+      "text": "mal",
+      "start": 40.0326538086,
+      "end": 40.2089805603
+    },
+    {
+      "text": "klar",
+      "start": 40.2089805603,
+      "end": 40.4419059753
+    },
+    {
+      "text": "kommen",
+      "start": 40.4419059753,
+      "end": 40.5790481567
+    },
+    {
+      "text": "ich",
+      "start": 40.5790481567,
+      "end": 40.8228569031
+    },
+    {
+      "text": "schließ",
+      "start": 40.8228569031,
+      "end": 41.2560539246
+    },
+    {
+      "text": "mich",
+      "start": 41.2560539246,
+      "end": 41.7349662781
+    },
+    {
+      "text": "ein",
+      "start": 41.7349662781,
+      "end": 42.5970077515
+    },
+    {
+      "text": "und",
+      "start": 42.8843536377,
+      "end": 43.20362854
+    },
+    {
+      "text": "komm",
+      "start": 43.20362854,
+      "end": 43.6825408936
+    },
+    {
+      "text": "nicht",
+      "start": 43.6825408936,
+      "end": 44.0939674377
+    },
+    {
+      "text": "raus",
+      "start": 44.0939674377,
+      "end": 44.6926078796
+    },
+    {
+      "text": "ich",
+      "start": 44.6926078796,
+      "end": 44.9799537659
+    },
+    {
+      "text": "bin",
+      "start": 44.9799537659,
+      "end": 45.2172317505
+    },
+    {
+      "text": "ein",
+      "start": 45.2172317505,
+      "end": 45.5423126221
+    },
+    {
+      "text": "freak",
+      "start": 45.5423126221,
+      "end": 46.2459869385
+    },
+    {
+      "text": "ein",
+      "start": 46.4805450439,
+      "end": 46.7200012207
+    },
+    {
+      "text": "freak",
+      "start": 46.7729721069,
+      "end": 47.4187736511
+    },
+    {
+      "text": "rede",
+      "start": 47.719909668,
+      "end": 47.9317932129
+    },
+    {
+      "text": "ständig",
+      "start": 47.9317932129,
+      "end": 48.2409057617
+    },
+    {
+      "text": "von",
+      "start": 48.2409057617,
+      "end": 48.4266662598
+    },
+    {
+      "text": "meinem",
+      "start": 48.4266662598,
+      "end": 48.5892066956
+    },
+    {
+      "text": "wunderschönen",
+      "start": 48.5892066956,
+      "end": 49.1885719299
+    },
+    {
+      "text": "glied",
+      "start": 49.1885719299,
+      "end": 49.5542869568
+    },
+    {
+      "text": "ich",
+      "start": 49.5542869568,
+      "end": 49.7922897339
+    },
+    {
+      "text": "bin",
+      "start": 49.7922897339,
+      "end": 50.0912475586
+    },
+    {
+      "text": "ein",
+      "start": 50.0912475586,
+      "end": 50.3640823364
+    },
+    {
+      "text": "freak",
+      "start": 50.3640823364,
+      "end": 51.0519714355
+    },
+    {
+      "text": "ein",
+      "start": 51.2812690735,
+      "end": 51.5526542664
+    },
+    {
+      "text": "freak",
+      "start": 51.5526542664,
+      "end": 52.2493896484
+    },
+    {
+      "text": "glaube",
+      "start": 52.4816322327,
+      "end": 52.7602729797
+    },
+    {
+      "text": "nicht",
+      "start": 52.7602729797,
+      "end": 52.8995933533
+    },
+    {
+      "text": "dass",
+      "start": 52.8995933533,
+      "end": 53.1388664246
+    },
+    {
+      "text": "es",
+      "start": 53.1388664246,
+      "end": 53.2375526428
+    },
+    {
+      "text": "für",
+      "start": 53.2375526428,
+      "end": 53.3407707214
+    },
+    {
+      "text": "mich",
+      "start": 53.3407707214,
+      "end": 53.5742416382
+    },
+    {
+      "text": "hier",
+      "start": 53.5742416382,
+      "end": 53.7355117798
+    },
+    {
+      "text": "etwas",
+      "start": 53.7355117798,
+      "end": 54.0096130371
+    },
+    {
+      "text": "gibt",
+      "start": 54.0096130371,
+      "end": 54.3143768311
+    },
+    {
+      "text": "ich",
+      "start": 54.3143768311,
+      "end": 54.5872116089
+    },
+    {
+      "text": "bin",
+      "start": 54.5872116089,
+      "end": 54.8752822876
+    },
+    {
+      "text": "ein",
+      "start": 54.8752822876,
+      "end": 55.1733322144
+    },
+    {
+      "text": "freak",
+      "start": 55.1733322144,
+      "end": 55.8868026733
+    },
+    {
+      "text": "ein",
+      "start": 56.0819969177,
+      "end": 56.3343315125
+    },
+    {
+      "text": "freak",
+      "start": 56.3343315125,
+      "end": 57.0414047241
+    },
+    {
+      "text": "rede",
+      "start": 57.2770957947,
+      "end": 57.5092964172
+    },
+    {
+      "text": "ständig",
+      "start": 57.5092964172,
+      "end": 57.8960533142
+    },
+    {
+      "text": "nur",
+      "start": 57.8960533142,
+      "end": 58.0208625793
+    },
+    {
+      "text": "von",
+      "start": 58.0208625793,
+      "end": 58.168888092
+    },
+    {
+      "text": "meiner",
+      "start": 58.168888092,
+      "end": 58.4380950928
+    },
+    {
+      "text": "scheiß",
+      "start": 58.4380950928,
+      "end": 58.6361923218
+    },
+    {
+      "text": "musik",
+      "start": 58.6361923218,
+      "end": 59.1180038452
+    },
+    {
+      "text": "ich",
+      "start": 59.1180038452,
+      "end": 59.3937416077
+    },
+    {
+      "text": "bin",
+      "start": 59.3937416077,
+      "end": 59.6897964478
+    },
+    {
+      "text": "ein",
+      "start": 59.6897964478,
+      "end": 59.9546470642
+    },
+    {
+      "text": "freak",
+      "start": 59.9546470642,
+      "end": 60.6376419067
+    },
+    {
+      "text": "ein",
+      "start": 60.8653068542,
+      "end": 61.1178245544
+    },
+    {
+      "text": "freak",
+      "start": 61.1178245544,
+      "end": 61.783946991
+    },
+    {
+      "text": "glaube",
+      "start": 62.0930595398,
+      "end": 62.4009056091
+    },
+    {
+      "text": "nicht",
+      "start": 62.4009056091,
+      "end": 62.5980949402
+    },
+    {
+      "text": "dass",
+      "start": 62.5980949402,
+      "end": 62.7141952515
+    },
+    {
+      "text": "mich",
+      "start": 62.7141952515,
+      "end": 62.8273925781
+    },
+    {
+      "text": "von",
+      "start": 62.8273925781,
+      "end": 63.0046272278
+    },
+    {
+      "text": "euch",
+      "start": 63.0046272278,
+      "end": 63.2018127441
+    },
+    {
+      "text": "jemand",
+      "start": 63.2018127441,
+      "end": 63.4398193359
+    },
+    {
+      "text": "besiegt",
+      "start": 63.4398193359,
+      "end": 63.8984107971
+    },
+    {
+      "text": "ich",
+      "start": 63.8984107971,
+      "end": 64.2031784058
+    },
+    {
+      "text": "bin",
+      "start": 64.2031784058,
+      "end": 64.4847183228
+    },
+    {
+      "text": "ein",
+      "start": 64.4847183228,
+      "end": 64.7892990112
+    },
+    {
+      "text": "freak",
+      "start": 64.7892990112,
+      "end": 65.2712936401
+    },
+    {
+      "text": "ich",
+      "start": 65.1029510498,
+      "end": 65.1755065918
+    },
+    {
+      "text": "würd",
+      "start": 65.1755065918,
+      "end": 65.2691192627
+    },
+    {
+      "text": "so",
+      "start": 65.2683868408,
+      "end": 65.4193191528
+    },
+    {
+      "text": "gern",
+      "start": 65.4193191528,
+      "end": 65.6050796509
+    },
+    {
+      "text": "den",
+      "start": 65.6050796509,
+      "end": 65.7066650391
+    },
+    {
+      "text": "ganzen",
+      "start": 65.7066650391,
+      "end": 66.0085296631
+    },
+    {
+      "text": "tag",
+      "start": 66.0085296631,
+      "end": 66.3016815186
+    },
+    {
+      "text": "musiziern",
+      "start": 66.3016815186,
+      "end": 67.6331939697
+    },
+    {
+      "text": "so",
+      "start": 68.0489807129,
+      "end": 68.2405471802
+    },
+    {
+      "text": "mit",
+      "start": 68.2405471802,
+      "end": 68.4321060181
+    },
+    {
+      "text": "hoes",
+      "start": 68.4321060181,
+      "end": 68.7833099365
+    },
+    {
+      "text": "und",
+      "start": 68.7833099365,
+      "end": 68.9748764038
+    },
+    {
+      "text": "cocain",
+      "start": 68.9748764038,
+      "end": 69.7714309692
+    },
+    {
+      "text": "wer",
+      "start": 69.7714309692,
+      "end": 69.8862609863
+    },
+    {
+      "text": "das",
+      "start": 69.8862609863,
+      "end": 70.1039428711
+    },
+    {
+      "text": "nicht",
+      "start": 70.1039428711,
+      "end": 70.2055358887
+    },
+    {
+      "text": "will",
+      "start": 70.2055358887,
+      "end": 70.3709716797
+    },
+    {
+      "text": "kann",
+      "start": 70.3709716797,
+      "end": 70.5131988525
+    },
+    {
+      "text": "bei",
+      "start": 70.5131988525,
+      "end": 70.6525192261
+    },
+    {
+      "text": "mir",
+      "start": 70.6525192261,
+      "end": 70.7889328003
+    },
+    {
+      "text": "oral",
+      "start": 70.7889328003,
+      "end": 71.3186416626
+    },
+    {
+      "text": "probieren",
+      "start": 71.3839492798,
+      "end": 72.5463943481
+    },
+    {
+      "text": "könnte",
+      "start": 72.8816299438,
+      "end": 73.1386871338
+    },
+    {
+      "text": "sofort",
+      "start": 73.1386871338,
+      "end": 73.7044906616
+    },
+    {
+      "text": "los",
+      "start": 73.775604248,
+      "end": 74.1297073364
+    },
+    {
+      "text": "gehn",
+      "start": 74.1297073364,
+      "end": 74.5697937012
+    },
+    {
+      "text": "hört",
+      "start": 74.5697937012,
+      "end": 74.6858978271
+    },
+    {
+      "text": "sich",
+      "start": 74.6858978271,
+      "end": 74.8901596069
+    },
+    {
+      "text": "das",
+      "start": 74.8901596069,
+      "end": 75.0410919189
+    },
+    {
+      "text": "an",
+      "start": 75.0410919189,
+      "end": 75.1629943848
+    },
+    {
+      "text": "als",
+      "start": 75.1629943848,
+      "end": 75.3545608521
+    },
+    {
+      "text": "würd",
+      "start": 75.3545608521,
+      "end": 75.4619522095
+    },
+    {
+      "text": "ich",
+      "start": 75.4619522095,
+      "end": 75.5682525635
+    },
+    {
+      "text": "spanisch",
+      "start": 75.5682525635,
+      "end": 76.2049865723
+    },
+    {
+      "text": "verstehn",
+      "start": 76.2049865723,
+      "end": 77.2723846436
+    },
+    {
+      "text": "una",
+      "start": 77.7026748657,
+      "end": 78.0246734619
+    },
+    {
+      "text": "loco",
+      "start": 78.0246734619,
+      "end": 78.419593811
+    },
+    {
+      "text": "pendejo",
+      "start": 78.419593811,
+      "end": 79.1270751953
+    },
+    {
+      "text": "ich",
+      "start": 79.3628997803,
+      "end": 79.4760971069
+    },
+    {
+      "text": "zeig",
+      "start": 79.4760971069,
+      "end": 79.6821746826
+    },
+    {
+      "text": "dir",
+      "start": 79.6821746826,
+      "end": 79.8098831177
+    },
+    {
+      "text": "einfach",
+      "start": 79.8098831177,
+      "end": 80.1465759277
+    },
+    {
+      "text": "meinen",
+      "start": 80.1465759277,
+      "end": 80.375869751
+    },
+    {
+      "text": "penis",
+      "start": 80.375869751,
+      "end": 81.0231323242
+    },
+    {
+      "text": "und",
+      "start": 81.0231323242,
+      "end": 81.2930603027
+    },
+    {
+      "text": "geh",
+      "start": 81.2930603027,
+      "end": 81.9635391235
+    },
+    {
+      "text": "ich",
+      "start": 82.2102508545,
+      "end": 82.3698883057
+    },
+    {
+      "text": "bin",
+      "start": 82.3698883057,
+      "end": 82.4946975708
+    },
+    {
+      "text": "interessiert",
+      "start": 82.4946975708,
+      "end": 83.0497970581
+    },
+    {
+      "text": "an",
+      "start": 83.1361465454,
+      "end": 83.2609558105
+    },
+    {
+      "text": "dem",
+      "start": 83.2609558105,
+      "end": 83.4234924316
+    },
+    {
+      "text": "echo",
+      "start": 83.4234924316,
+      "end": 83.7311553955
+    },
+    {
+      "text": "ich",
+      "start": 102.8934249878,
+      "end": 103.1488418579
+    },
+    {
+      "text": "schließ",
+      "start": 103.1488418579,
+      "end": 103.6654891968
+    },
+    {
+      "text": "mich",
+      "start": 103.6654891968,
+      "end": 104.0950546265
+    },
+    {
+      "text": "ein",
+      "start": 104.0950546265,
+      "end": 104.9309768677
+    },
+    {
+      "text": "und",
+      "start": 105.2937850952,
+      "end": 105.5956497192
+    },
+    {
+      "text": "komm",
+      "start": 105.5956497192,
+      "end": 106.0803604126
+    },
+    {
+      "text": "nicht",
+      "start": 106.0803604126,
+      "end": 106.4780044556
+    },
+    {
+      "text": "raus",
+      "start": 106.4780044556,
+      "end": 107.1310653687
+    },
+    {
+      "text": "ich",
+      "start": 107.1310653687,
+      "end": 107.4097061157
+    },
+    {
+      "text": "bin",
+      "start": 107.4097061157,
+      "end": 107.6738357544
+    },
+    {
+      "text": "ein",
+      "start": 107.6738357544,
+      "end": 107.9582748413
+    },
+    {
+      "text": "freak",
+      "start": 107.9582748413,
+      "end": 108.6868057251
+    },
+    {
+      "text": "ein",
+      "start": 108.878364563,
+      "end": 109.1483001709
+    },
+    {
+      "text": "freak",
+      "start": 109.1483001709,
+      "end": 109.8557815552
+    },
+    {
+      "text": "rede",
+      "start": 110.0916137695,
+      "end": 110.3470306396
+    },
+    {
+      "text": "ständig",
+      "start": 110.3470306396,
+      "end": 110.6256713867
+    },
+    {
+      "text": "von",
+      "start": 110.6256713867,
+      "end": 110.8114318848
+    },
+    {
+      "text": "meinem",
+      "start": 110.8114318848,
+      "end": 110.9739685059
+    },
+    {
+      "text": "wunderschönen",
+      "start": 110.9739685059,
+      "end": 111.5922012329
+    },
+    {
+      "text": "glied",
+      "start": 111.5922012329,
+      "end": 111.9201812744
+    },
+    {
+      "text": "ich",
+      "start": 111.9201812744,
+      "end": 112.1988220215
+    },
+    {
+      "text": "bin",
+      "start": 112.1988220215,
+      "end": 112.3903884888
+    },
+    {
+      "text": "ein",
+      "start": 112.4948730469,
+      "end": 112.6806335449
+    },
+    {
+      "text": "freak",
+      "start": 112.7648086548,
+      "end": 113.4585037231
+    },
+    {
+      "text": "ein",
+      "start": 113.6790924072,
+      "end": 113.9635391235
+    },
+    {
+      "text": "freak",
+      "start": 113.9635391235,
+      "end": 114.5672531128
+    },
+    {
+      "text": "glaube",
+      "start": 114.8865280151,
+      "end": 115.0839004517
+    },
+    {
+      "text": "nicht",
+      "start": 115.0839004517,
+      "end": 115.3567352295
+    },
+    {
+      "text": "dass",
+      "start": 115.3567352295,
+      "end": 115.5308837891
+    },
+    {
+      "text": "es",
+      "start": 115.5308837891,
+      "end": 115.6208648682
+    },
+    {
+      "text": "für",
+      "start": 115.6208648682,
+      "end": 115.77759552
+    },
+    {
+      "text": "mich",
+      "start": 115.77759552,
+      "end": 115.966255188
+    },
+    {
+      "text": "hier",
+      "start": 115.966255188,
+      "end": 116.0968704224
+    },
+    {
+      "text": "etwas",
+      "start": 116.0968704224,
+      "end": 116.3958282471
+    },
+    {
+      "text": "gibt",
+      "start": 116.3958282471,
+      "end": 116.6614074707
+    },
+    {
+      "text": "ich",
+      "start": 116.7499313354,
+      "end": 116.934967041
+    },
+    {
+      "text": "bin",
+      "start": 116.9966430664,
+      "end": 117.1882095337
+    },
+    {
+      "text": "ein",
+      "start": 117.2520599365,
+      "end": 117.4806365967
+    },
+    {
+      "text": "freak",
+      "start": 117.5568237305,
+      "end": 118.2534255981
+    },
+    {
+      "text": "ein",
+      "start": 118.4856262207,
+      "end": 118.7410430908
+    },
+    {
+      "text": "freak",
+      "start": 118.7410430908,
+      "end": 119.3708877563
+    },
+    {
+      "text": "rede",
+      "start": 119.6698379517,
+      "end": 119.9397735596
+    },
+    {
+      "text": "ständig",
+      "start": 119.9397735596,
+      "end": 120.290977478
+    },
+    {
+      "text": "nur",
+      "start": 120.290977478,
+      "end": 120.3983688354
+    },
+    {
+      "text": "von",
+      "start": 120.3983688354,
+      "end": 120.5754165649
+    },
+    {
+      "text": "meiner",
+      "start": 120.5754165649,
+      "end": 120.8308410645
+    },
+    {
+      "text": "scheiß",
+      "start": 120.8308410645,
+      "end": 121.0369186401
+    },
+    {
+      "text": "musik",
+      "start": 121.0369186401,
+      "end": 121.4345550537
+    },
+    {
+      "text": "ich",
+      "start": 121.5390472412,
+      "end": 121.7973709106
+    },
+    {
+      "text": "bin",
+      "start": 121.7973709106,
+      "end": 122.0150604248
+    },
+    {
+      "text": "ein",
+      "start": 122.0876159668,
+      "end": 122.2748336792
+    },
+    {
+      "text": "freak",
+      "start": 122.3372344971,
+      "end": 123.0846252441
+    },
+    {
+      "text": "ein",
+      "start": 123.2689361572,
+      "end": 123.5243530273
+    },
+    {
+      "text": "freak",
+      "start": 123.5243530273,
+      "end": 124.2906112671
+    },
+    {
+      "text": "glaube",
+      "start": 124.4705657959,
+      "end": 124.7782287598
+    },
+    {
+      "text": "nicht",
+      "start": 124.7782287598,
+      "end": 124.9756011963
+    },
+    {
+      "text": "dass",
+      "start": 124.9756011963,
+      "end": 125.0771865845
+    },
+    {
+      "text": "mich",
+      "start": 125.0771865845,
+      "end": 125.2658538818
+    },
+    {
+      "text": "von",
+      "start": 125.2658538818,
+      "end": 125.3935623169
+    },
+    {
+      "text": "euch",
+      "start": 125.3935623169,
+      "end": 125.5967330933
+    },
+    {
+      "text": "jemand",
+      "start": 125.5967330933,
+      "end": 125.8666687012
+    },
+    {
+      "text": "besiegt",
+      "start": 125.8666687012,
+      "end": 126.17578125
+    },
+    {
+      "text": "ich",
+      "start": 126.328163147,
+      "end": 126.5951919556
+    },
+    {
+      "text": "bin",
+      "start": 126.5951919556,
+      "end": 126.8041687012
+    },
+    {
+      "text": "ein",
+      "start": 126.8738327026,
+      "end": 127.1067581177
+    },
+    {
+      "text": "freak",
+      "start": 127.1844024658,
+      "end": 127.4978713989
+    },
+    {
+      "text": "während",
+      "start": 127.4978713989,
+      "end": 127.6575088501
+    },
+    {
+      "text": "du",
+      "start": 127.6575088501,
+      "end": 127.7474822998
+    },
+    {
+      "text": "sprichst",
+      "start": 127.7474822998,
+      "end": 128.0754699707
+    },
+    {
+      "text": "bin",
+      "start": 128.0754699707,
+      "end": 128.2873535156
+    },
+    {
+      "text": "ich",
+      "start": 128.2873535156,
+      "end": 128.4556884766
+    },
+    {
+      "text": "in",
+      "start": 128.4556884766,
+      "end": 128.5572814941
+    },
+    {
+      "text": "gedanken",
+      "start": 128.5572814941,
+      "end": 128.9926605225
+    },
+    {
+      "text": "nackt",
+      "start": 128.9926605225,
+      "end": 129.4062652588
+    },
+    {
+      "text": "ich",
+      "start": 129.753112793,
+      "end": 129.9069366455
+    },
+    {
+      "text": "trage",
+      "start": 129.9069366455,
+      "end": 130.2287597656
+    },
+    {
+      "text": "nur",
+      "start": 130.2287597656,
+      "end": 130.3916625977
+    },
+    {
+      "text": "meine",
+      "start": 130.3916625977,
+      "end": 130.6586914062
+    },
+    {
+      "text": "gitarre",
+      "start": 130.6586914062,
+      "end": 131.3610839844
+    },
+    {
+      "text": "ich",
+      "start": 132.1737823486,
+      "end": 132.3450317383
+    },
+    {
+      "text": "hör",
+      "start": 132.3450317383,
+      "end": 132.49269104
+    },
+    {
+      "text": "nicht",
+      "start": 132.49269104,
+      "end": 132.6672058105
+    },
+    {
+      "text": "hin",
+      "start": 132.6672058105,
+      "end": 132.7891082764
+    },
+    {
+      "text": "ob",
+      "start": 132.7891082764,
+      "end": 132.9342346191
+    },
+    {
+      "text": "irgendjemand",
+      "start": 132.9342346191,
+      "end": 133.5060272217
+    },
+    {
+      "text": "etwas",
+      "start": 133.5060272217,
+      "end": 133.8166046143
+    },
+    {
+      "text": "sagt",
+      "start": 133.8166046143,
+      "end": 134.19972229
+    },
+    {
+      "text": "ich",
+      "start": 134.570526123,
+      "end": 134.7328491211
+    },
+    {
+      "text": "glaub",
+      "start": 134.7328491211,
+      "end": 134.924987793
+    },
+    {
+      "text": "die",
+      "start": 134.924987793,
+      "end": 135.0124206543
+    },
+    {
+      "text": "reden",
+      "start": 135.0124206543,
+      "end": 135.3229980469
+    },
+    {
+      "text": "über",
+      "start": 135.3229980469,
+      "end": 135.5755157471
+    },
+    {
+      "text": "mathe",
+      "start": 135.5755157471,
+      "end": 136.2242126465
+    },
+    {
+      "text": "während",
+      "start": 136.9861297607,
+      "end": 137.2618560791
+    },
+    {
+      "text": "du",
+      "start": 137.2618560791,
+      "end": 137.3627166748
+    },
+    {
+      "text": "sprichst",
+      "start": 137.3627166748,
+      "end": 137.7110137939
+    },
+    {
+      "text": "bin",
+      "start": 137.7110137939,
+      "end": 137.9199981689
+    },
+    {
+      "text": "ich",
+      "start": 137.9199981689,
+      "end": 138.0513305664
+    },
+    {
+      "text": "in",
+      "start": 138.0513305664,
+      "end": 138.1761474609
+    },
+    {
+      "text": "gedanken",
+      "start": 138.1761474609,
+      "end": 138.6165924072
+    },
+    {
+      "text": "nackt",
+      "start": 138.6165924072,
+      "end": 138.9844970703
+    },
+    {
+      "text": "ich",
+      "start": 139.3810424805,
+      "end": 139.4938812256
+    },
+    {
+      "text": "trage",
+      "start": 139.4938812256,
+      "end": 139.8044433594
+    },
+    {
+      "text": "nur",
+      "start": 139.8044433594,
+      "end": 139.9698791504
+    },
+    {
+      "text": "meine",
+      "start": 139.9698791504,
+      "end": 140.2401885986
+    },
+    {
+      "text": "gitarre",
+      "start": 140.2401885986,
+      "end": 141.1265258789
+    },
+    {
+      "text": "ich",
+      "start": 141.8260345459,
+      "end": 142.0016326904
+    },
+    {
+      "text": "hör",
+      "start": 142.0016326904,
+      "end": 142.1090240479
+    },
+    {
+      "text": "nicht",
+      "start": 142.1090240479,
+      "end": 142.2425384521
+    },
+    {
+      "text": "hin",
+      "start": 142.2425384521,
+      "end": 142.4108886719
+    },
+    {
+      "text": "ob",
+      "start": 142.4108886719,
+      "end": 142.5618133545
+    },
+    {
+      "text": "irgendjemand",
+      "start": 142.5618133545,
+      "end": 143.136505127
+    },
+    {
+      "text": "etwas",
+      "start": 143.136505127,
+      "end": 143.4049835205
+    },
+    {
+      "text": "sagt",
+      "start": 143.4049835205,
+      "end": 143.791015625
+    },
+    {
+      "text": "ich",
+      "start": 144.1665344238,
+      "end": 144.303314209
+    },
+    {
+      "text": "glaub",
+      "start": 144.303314209,
+      "end": 144.4745635986
+    },
+    {
+      "text": "ich",
+      "start": 144.4745635986,
+      "end": 144.6109771729
+    },
+    {
+      "text": "sitze",
+      "start": 144.6109771729,
+      "end": 144.8780059814
+    },
+    {
+      "text": "in",
+      "start": 144.8780059814,
+      "end": 145.0666656494
+    },
+    {
+      "text": "der",
+      "start": 145.0666656494,
+      "end": 145.1798706055
+    },
+    {
+      "text": "kacke",
+      "start": 145.1798706055,
+      "end": 145.4788208008
+    },
+    {
+      "text": "ich",
+      "start": 145.4788208008,
+      "end": 145.803894043
+    },
+    {
+      "text": "bin",
+      "start": 145.803894043,
+      "end": 146.1115570068
+    },
+    {
+      "text": "ein",
+      "start": 146.1115570068,
+      "end": 146.3815002441
+    },
+    {
+      "text": "freak",
+      "start": 146.3815002441,
+      "end": 147.0497894287
+    },
+    {
+      "text": "ein",
+      "start": 147.272567749,
+      "end": 147.5453948975
+    },
+    {
+      "text": "freak",
+      "start": 147.5453948975,
+      "end": 148.2492523193
+    },
+    {
+      "text": "rede",
+      "start": 148.5231781006,
+      "end": 148.7180023193
+    },
+    {
+      "text": "ständig",
+      "start": 148.7180023193,
+      "end": 149.0953216553
+    },
+    {
+      "text": "von",
+      "start": 149.0953216553,
+      "end": 149.2462615967
+    },
+    {
+      "text": "meinem",
+      "start": 149.2462615967,
+      "end": 149.38230896
+    },
+    {
+      "text": "wunderschönen",
+      "start": 149.38230896,
+      "end": 149.9776916504
+    },
+    {
+      "text": "glied",
+      "start": 149.9776916504,
+      "end": 150.3346862793
+    },
+    {
+      "text": "ich",
+      "start": 150.3346862793,
+      "end": 150.6046295166
+    },
+    {
+      "text": "bin",
+      "start": 150.6046295166,
+      "end": 150.8092498779
+    },
+    {
+      "text": "ein",
+      "start": 150.8977813721,
+      "end": 151.0980529785
+    },
+    {
+      "text": "freak",
+      "start": 151.1648101807,
+      "end": 151.8548736572
+    },
+    {
+      "text": "ein",
+      "start": 152.0848999023,
+      "end": 152.3624420166
+    },
+    {
+      "text": "freak",
+      "start": 152.3624420166,
+      "end": 153.0579528809
+    },
+    {
+      "text": "glaube",
+      "start": 153.2897949219,
+      "end": 153.5651702881
+    },
+    {
+      "text": "nicht",
+      "start": 153.5651702881,
+      "end": 153.7451171875
+    },
+    {
+      "text": "dass",
+      "start": 153.7451171875,
+      "end": 153.939956665
+    },
+    {
+      "text": "es",
+      "start": 153.939956665,
+      "end": 154.0324707031
+    },
+    {
+      "text": "für",
+      "start": 154.0324707031,
+      "end": 154.1863098145
+    },
+    {
+      "text": "mich",
+      "start": 154.1863098145,
+      "end": 154.3430328369
+    },
+    {
+      "text": "hier",
+      "start": 154.3430328369,
+      "end": 154.4997711182
+    },
+    {
+      "text": "etwas",
+      "start": 154.4997711182,
+      "end": 154.7958221436
+    },
+    {
+      "text": "gibt",
+      "start": 154.7958221436,
+      "end": 155.1180114746
+    },
+    {
+      "text": "ich",
+      "start": 155.1180114746,
+      "end": 155.3792266846
+    },
+    {
+      "text": "bin",
+      "start": 155.3792266846,
+      "end": 155.6607666016
+    },
+    {
+      "text": "ein",
+      "start": 155.6607666016,
+      "end": 155.9510192871
+    },
+    {
+      "text": "freak",
+      "start": 155.9510192871,
+      "end": 156.634552002
+    },
+    {
+      "text": "ein",
+      "start": 156.8623962402,
+      "end": 157.1352386475
+    },
+    {
+      "text": "freak",
+      "start": 157.1352386475,
+      "end": 157.8557891846
+    },
+    {
+      "text": "rede",
+      "start": 158.0959625244,
+      "end": 158.3049468994
+    },
+    {
+      "text": "ständig",
+      "start": 158.3049468994,
+      "end": 158.6909790039
+    },
+    {
+      "text": "nur",
+      "start": 158.6909790039,
+      "end": 158.7867584229
+    },
+    {
+      "text": "von",
+      "start": 158.7867584229,
+      "end": 158.9812316895
+    },
+    {
+      "text": "meiner",
+      "start": 158.9812316895,
+      "end": 159.2544250488
+    },
+    {
+      "text": "scheiß",
+      "start": 159.2544250488,
+      "end": 159.4514312744
+    },
+    {
+      "text": "musik",
+      "start": 159.4514312744,
+      "end": 159.9216308594
+    },
+    {
+      "text": "ich",
+      "start": 159.9216308594,
+      "end": 160.2060699463
+    },
+    {
+      "text": "bin",
+      "start": 160.2060699463,
+      "end": 160.4789123535
+    },
+    {
+      "text": "ein",
+      "start": 160.4789123535,
+      "end": 160.724899292
+    },
+    {
+      "text": "freak",
+      "start": 160.724899292,
+      "end": 161.4672088623
+    },
+    {
+      "text": "ein",
+      "start": 161.6544189453,
+      "end": 161.9323425293
+    },
+    {
+      "text": "freak",
+      "start": 161.9323425293,
+      "end": 162.690612793
+    },
+    {
+      "text": "glaube",
+      "start": 162.8702087402,
+      "end": 163.1952819824
+    },
+    {
+      "text": "nicht",
+      "start": 163.1952819824,
+      "end": 163.3346099854
+    },
+    {
+      "text": "dass",
+      "start": 163.3346099854,
+      "end": 163.4739227295
+    },
+    {
+      "text": "mich",
+      "start": 163.4739227295,
+      "end": 163.6600494385
+    },
+    {
+      "text": "von",
+      "start": 163.6600494385,
+      "end": 163.7989959717
+    },
+    {
+      "text": "euch",
+      "start": 163.7989959717,
+      "end": 163.9880218506
+    },
+    {
+      "text": "jemand",
+      "start": 163.9880218506,
+      "end": 164.2231292725
+    },
+    {
+      "text": "besiegt",
+      "start": 164.2231292725,
+      "end": 164.5932006836
+    },
+    {
+      "text": "ich",
+      "start": 164.7194519043,
+      "end": 165.0068054199
+    },
+    {
+      "text": "bin",
+      "start": 165.0068054199,
+      "end": 165.3086547852
+    },
+    {
+      "text": "ein",
+      "start": 165.3086547852,
+      "end": 165.5553741455
+    },
+    {
+      "text": "freak",
+      "start": 165.5553741455,
+      "end": 166.5915679932
+    },
+    {
+      "text": "ich",
+      "start": 169.4603118896,
+      "end": 169.7131958008
+    },
+    {
+      "text": "bin",
+      "start": 169.7955627441,
+      "end": 170.0126953125
+    },
+    {
+      "text": "ein",
+      "start": 170.0850830078,
+      "end": 170.3041229248
+    },
+    {
+      "text": "freak",
+      "start": 170.3771362305,
+      "end": 171.3806762695
+    },
+    {
+      "text": "ich",
+      "start": 174.3267059326,
+      "end": 174.5095672607
+    },
+    {
+      "text": "bin",
+      "start": 174.570526123,
+      "end": 174.85206604
+    },
+    {
+      "text": "ein",
+      "start": 174.85206604,
+      "end": 175.0806274414
+    },
+    {
+      "text": "freak",
+      "start": 175.156829834,
+      "end": 176.1697998047
+    },
+    {
+      "text": "ich",
+      "start": 179.1379547119,
+      "end": 179.4024505615
+    },
+    {
+      "text": "bin",
+      "start": 179.4024505615,
+      "end": 179.6701965332
+    },
+    {
+      "text": "ein",
+      "start": 179.6701965332,
+      "end": 179.951385498
+    },
+    {
+      "text": "freak",
+      "start": 179.951385498,
+      "end": 180.9284362793
+    },
+    {
+      "text": "glaube",
+      "start": 182.0897979736,
+      "end": 182.386932373
+    },
+    {
+      "text": "nicht",
+      "start": 182.386932373,
+      "end": 182.5763244629
+    },
+    {
+      "text": "dass",
+      "start": 182.5763244629,
+      "end": 182.6869812012
+    },
+    {
+      "text": "mich",
+      "start": 182.6869812012,
+      "end": 182.8368225098
+    },
+    {
+      "text": "von",
+      "start": 182.8368225098,
+      "end": 182.9892120361
+    },
+    {
+      "text": "euch",
+      "start": 182.9892120361,
+      "end": 183.1974639893
+    },
+    {
+      "text": "jemand",
+      "start": 183.1974639893,
+      "end": 183.4666595459
+    },
+    {
+      "text": "besiegt",
+      "start": 183.4666595459,
+      "end": 183.928894043
+    },
+    {
+      "text": "ich",
+      "start": 183.928894043,
+      "end": 184.2082519531
+    },
+    {
+      "text": "bin",
+      "start": 184.2082519531,
+      "end": 184.4876251221
+    },
+    {
+      "text": "ein",
+      "start": 184.4876251221,
+      "end": 184.772064209
+    },
+    {
+      "text": "freak",
+      "start": 184.772064209,
+      "end": 185.3648986816
+    }
+  ]
+}

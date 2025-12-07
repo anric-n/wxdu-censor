@@ -58,7 +58,7 @@ def transcribe_vocals(
         compute_type = "float32"
     
     # Load faster-whisper model
-    logger.info("Device used: %s", type(device))
+    logger.info("Device used: %s", device)
     model = WhisperModel(model_name, device=device, compute_type=compute_type)
     
     # Transcribe with word-level timestamps in batched fashion

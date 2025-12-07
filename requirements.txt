@@ -2,11 +2,14 @@ streamlit>=1.28.0
 openai>=1.0.0
 ffmpeg-python>=0.2.0
 faster-whisper # faster implementation of openai-whisper
-torch==2.1.0
-torchaudio==2.1.0
+torch
+torchaudio>=0.8,<2.2
 numpy>=1.21.0,<2.0
 soundfile>=0.10.3
 demucs @ git+https://github.com/adefossez/demucs.git@main
+huggingface-hub
+datasets
+torchcodec
 # dependencies for demucs
 dora-search 
 einops
@@ -14,3 +17,12 @@ julius>=0.2.3
 lameenc>=1.2
 openunmix
 pyyaml
+# dependnecies for dataset
+numpy
+matplotlib
+seaborn
+librosa
+configparser
+mir_eval
+unidecode
+datasets==3.2.0
