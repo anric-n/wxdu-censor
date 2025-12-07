@@ -1,0 +1,3 @@
+[submodule "data/jamendolyrics"]
+	path = data/jamendolyrics
+	url = https://huggingface.co/datasets/jamendolyrics/jamendolyrics
