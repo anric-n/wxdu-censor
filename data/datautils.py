@@ -76,15 +76,15 @@ def calculate_word_error_rate(whisper_words: List[Dict], actual_words: List[Dict
         'total_actual_words': total_actual,
     }
 
-def calculate_timing_mse(whisper_words: List[Dict], actual_words: List[Dict]) -> Dict[str, Any]:
-    """Calculate Mean Squared Error between word timing for correctly matched words.
-    
+def calculate_timing_rmse(whisper_words: List[Dict], actual_words: List[Dict]) -> Dict[str, Any]:
+    """Calculate Root Mean Squared Error (RMSE) between word timing for correctly matched words.
+
     Only considers words that are transcribed correctly (after normalization).
-    
+
     Returns:
         Dict with timing metrics:
-        - start_mse: Mean squared error for start times
-        - end_mse: Mean squared error for end times
+        - start_rmse: Root mean squared error for start times (seconds)
+        - end_rmse: Root mean squared error for end times (seconds)
         - matched_words_with_timing: Number of words matched with timing info
         - avg_start_diff: Average absolute difference in start times (for reference)
         - avg_end_diff: Average absolute difference in end times (for reference)
@@ -132,14 +132,20 @@ def calculate_timing_mse(whisper_words: List[Dict], actual_words: List[Dict]) ->
             matched_count += 1
     
     # Calculate MSE
+    # Mean squared errors
     start_mse = sum(start_diffs_sq) / len(start_diffs_sq) if start_diffs_sq else 0
     end_mse = sum(end_diffs_sq) / len(end_diffs_sq) if end_diffs_sq else 0
     avg_start_diff = sum(start_diffs_abs) / len(start_diffs_abs) if start_diffs_abs else 0
     avg_end_diff = sum(end_diffs_abs) / len(end_diffs_abs) if end_diffs_abs else 0
+
+    # Root mean squared errors (RMSE)
+    from math import sqrt
+    start_rmse = sqrt(start_mse) if start_mse else 0
+    end_rmse = sqrt(end_mse) if end_mse else 0
     
     return {
-        'start_mse': start_mse,
-        'end_mse': end_mse,
+        'start_rmse': start_rmse,
+        'end_rmse': end_rmse,
         'matched_words_with_timing': matched_count,
         'avg_start_diff': avg_start_diff,
         'avg_end_diff': avg_end_diff,

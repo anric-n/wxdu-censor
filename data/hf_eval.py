@@ -16,7 +16,7 @@ sys.path.insert(0, str(project_root))
 
 from models.demucs_processor import isolate_vocals
 from models.whisper_processor import transcribe_vocals
-from data.datautils import load_metadata_jsonl, normalize_word, calculate_word_error_rate, calculate_timing_mse, normalize_transcript_words
+from data.datautils import load_metadata_jsonl, normalize_word, calculate_word_error_rate, calculate_timing_rmse, normalize_transcript_words
 
 
 
@@ -107,8 +107,8 @@ def main():
             # Calculate Word Error Rate using normalized lists
             wer_metrics = calculate_word_error_rate(whisper_norm, actual_norm)
 
-            # Calculate timing MSE (only for correctly matched words)
-            timing_metrics = calculate_timing_mse(whisper_norm, actual_norm)
+            # Calculate timing RMSE (only for correctly matched words)
+            timing_metrics = calculate_timing_rmse(whisper_norm, actual_norm)
 
             result = {
                 'file': file_stem,
@@ -121,7 +121,7 @@ def main():
             results.append(result)
             
             logging.info(f"✓ WER: {wer_metrics['wer']:.3f} | Correct: {wer_metrics['correct_matches']}/{wer_metrics['total_actual_words']}")
-            logging.info(f"✓ Start MSE: {timing_metrics['start_mse']:.6f} | End MSE: {timing_metrics['end_mse']:.6f}")
+            logging.info(f"✓ Start RMSE: {timing_metrics['start_rmse']:.6f}s | End RMSE: {timing_metrics['end_rmse']:.6f}s")
             logging.info(f"✓ Matched words with timing: {timing_metrics['matched_words_with_timing']}")
             
         except Exception as e:
@@ -150,9 +150,9 @@ def main():
         print(f"  Total substitutions: {int(df['substitutions'].sum())}")
         print(f"  Total deletions: {int(df['deletions'].sum())}")
         print(f"  Total insertions: {int(df['insertions'].sum())}")
-        print(f"\nTiming Accuracy (MSE in seconds²):")
-        print(f"  Median Start MSE: {df['start_mse'].median():.6f}")
-        print(f"  Median End MSE: {df['end_mse'].median():.6f}")
+        print(f"\nTiming Accuracy (RMSE in seconds):")
+        print(f"  Median Start RMSE: {df['start_rmse'].median():.6f}s")
+        print(f"  Median End RMSE: {df['end_rmse'].median():.6f}s")
         print(f"  Median Start Time Diff: {df['avg_start_diff'].median():.6f}s")
         print(f"  Median End Time Diff: {df['avg_end_diff'].median():.6f}s")
         print(f"  Median matched words with timing: {df['matched_words_with_timing'].median():.1f}")
