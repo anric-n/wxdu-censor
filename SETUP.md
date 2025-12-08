@@ -117,37 +117,34 @@ The app will open automatically in your browser at:
 The typical `load_dataset` method used to load Hugging-Face datasets does not work for this project, as there is a dependency conlict between `torchcodec` and the legacy version of `torchaudio` needed to run Demucs. Instead, the dataset, including the audio files must be cloned from the Github repository through a submodule. 
 
 First, install Git LFS if you haven't already:
-    ```bash
-    git lfs install
-    ```
+```bash
+git lfs install
+```
 
 Then clone the repository with submodules:
-    ```bash
-    git clone --recurse-submodules https://github.com/anric-n/wxdu-censor.git
-    cd wxdu-censor
-    ```
+```bash
+git clone --recurse-submodules https://github.com/anric-n/wxdu-censor.git
+cd wxdu-censor
+```
 
 Or if you already cloned without submodules, initialize and update:
-    ```bash
-    cd data
-    git submodule update --init
-    ```
+```bash
+cd data
+git submodule update --init
+```
 
-The dataset will be cloned to `data/jamendolyrics/` from:
-    ```
-    https://huggingface.co/datasets/jamendolyrics/jamendolyrics
-    ```
+The dataset will be cloned to `data/jamendolyrics/` from https://huggingface.co/datasets/jamendolyrics/jamendolyrics
 
 Right now running `src/eval.py` will output the results for the first english song alphabetically for `en_transcription_comparison.csv` to `data/eval/transcription_comparison.csv`. Additonally, CSV files for each song comparing their transcriptions at the word level will populate in `data/eval/normalize_transcripts`.
+
 To get results for all 20 songs in English, modify line 26 in `src/eval.py` to
-to
-    ```python
-    for audio_file in sorted(project_root.glob("data/jamendolyrics/subsets/en/mp3/*.mp3")):
+```python
+for audio_file in sorted(project_root.glob("data/jamendolyrics/subsets/en/mp3/*.mp3")):
 
-    ```
+```
 Similarly, to get results for German, modify line 26 in `src/eval.py` to
-to
-    ```python
-    for audio_file in sorted(project_root.glob("data/jamendolyrics/subsets/de/mp3/*.mp3")):
 
-    ```
+```python
+for audio_file in sorted(project_root.glob("data/jamendolyrics/subsets/de/mp3/*.mp3")):
+
+```

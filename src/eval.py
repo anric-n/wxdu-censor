@@ -23,7 +23,7 @@ def main():
     
     results = []
     
-    for audio_file in sorted(project_root.glob("data/jamendolyrics/subsets/en/mp3/*.m4a"))[:1]:
+    for audio_file in sorted(project_root.glob("data/jamendolyrics/subsets/en/mp3/*.mp3"))[:1]:
         file_stem = audio_file.stem
         logging.info(f"Processing file: {file_stem}")
 

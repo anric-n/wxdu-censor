@@ -1,4 +1,4 @@
-### WXDU Music Autocensorer
+### WXDU Music Autocensor
 
 ## What it Does:
 This is a Streamlit web application that automatically censors music. Users can upload audio files of explicit music and retrieve censored audio files, where expicit words have been silenced from the vocals. 
