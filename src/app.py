@@ -205,7 +205,7 @@ st.set_page_config(
 st.title("🎵 Music Autocensor")
 st.markdown(
     "Automatically censor music using Demucs, Whisper, ChatGPT, and FFmpeg. "
-    "Upload music files and let AI identify and silence inappropriate words so they are safe to pplay on public radio."
+    "Upload music files and let AI identify and silence inappropriate words so they are safe to play on public radio."
 )
 
 # Sidebar for configuration
@@ -350,11 +350,20 @@ with tab1:
                     few_shot_examples = st.session_state.get("few_shot_examples", "")
                     
                     # Step 4: Identify words to censor with ChatGPT
-                    censored_words = censor_with_chatgpt(
-                        transcription["words"],
-                        few_shot_examples=few_shot_examples if few_shot_examples else None,
-                        model=chatgpt_model
-                    )
+                    # ChatGPT will be skipped if language is unknown or if there are no words
+                    if transcription["words"] and transcription.get("language") != "unknown":
+                        censored_words = censor_with_chatgpt(
+                            transcription["words"],
+                            few_shot_examples=few_shot_examples if few_shot_examples else None,
+                            model=chatgpt_model,
+                            language=transcription.get("language")
+                        )
+                    else:
+                        if not transcription["words"]:
+                            st.info(f"⚠️ No speech detected in {uploaded_file.name}. Skipping ChatGPT analysis.")
+                        else:
+                            st.info(f"⚠️ Unknown language detected in {uploaded_file.name}. Skipping ChatGPT analysis.")
+                        censored_words = []
                     
                     # Save censored words to JSON file
                     censored_words_path = file_output_dir / "censored_words.json"

@@ -125,7 +125,8 @@ def censor_with_chatgpt(
     transcript_words: List[Dict[str, Any]],
     few_shot_examples: Optional[str] = None,
     model: str = "gpt-5.1-mini",
-    api_key: Optional[str] = None
+    api_key: Optional[str] = None,
+    language: Optional[str] = None
 ) -> List[Dict[str, Any]]:
     """Use ChatGPT Responses API to identify words to censor.
     Args:
@@ -133,9 +134,14 @@ def censor_with_chatgpt(
         few_shot_examples: Optional string of few-shot examples to include in the prompt
         model: ChatGPT model name (default: "gpt-5.1-mini")
         api_key: OpenAI API key (if None, uses from streamlit secrets)
+        language: Detected language code (e.g., "en"). Returns empty list if "unknown" or None
     Returns:
         List of censored word dicts with "word", "start", "end" keys
     """
+    
+    # Skip ChatGPT if language is unknown or not provided
+    if not language or language == "unknown":
+        return []
 
     if api_key is None:
         api_key = secrets["OPENAI_API_KEY"]

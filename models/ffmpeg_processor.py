@@ -6,6 +6,43 @@ from pathlib import Path
 from typing import List, Dict, Any, Tuple
 
 
+def apply_noise_gate(
+    input_path: Path,
+    output_path: Path,
+    threshold_db: float = -40
+) -> Path:
+    """Apply noise gate filter to suppress background noise.
+    
+    Uses FFmpeg's silenceremove filter to remove nearly-silent audio below the threshold.
+    
+    Args:
+        input_path: Path to the input audio file
+        output_path: Path where to save the noise-gated audio
+        threshold_db: Noise threshold in dB (more negative = more aggressive)
+                      Default -40 dB suppresses quieter background noise
+        
+    Returns:
+        Path to the output file
+    """
+    # Use silenceremove to suppress audio below threshold
+    # Also use highpass filter to remove very low frequency rumble
+    filter_complex = f"silenceremove=start_periods=1:start_duration=0.5:start_threshold={threshold_db}dB:stop_periods=-1:stop_duration=0.5:stop_threshold={threshold_db}dB,highpass=f=80"
+    
+    run(
+        [
+            "ffmpeg", "-y",
+            "-i", str(input_path),
+            "-af", filter_complex,
+            "-c:a", "pcm_s16le",
+            str(output_path)
+        ],
+        check=True,
+        capture_output=True
+    )
+    
+    return output_path
+
+
 def create_timestamp_ranges(censored_words: List[Dict[str, Any]], 
                            padding: float = 0.1) -> List[Tuple[float, float]]:
     """Create timestamp ranges for silencing, with optional padding.
