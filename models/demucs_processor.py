@@ -7,19 +7,6 @@ import torch
 
 from demucs.api import Separator, save_audio
 
-# Module logger
-logger = logging.getLogger(__name__)
-# Ensure there's a stdout handler so logs are visible in the Streamlit server terminal
-if not logger.handlers:
-    import sys
-    sh = logging.StreamHandler(sys.stdout)
-    sh.setLevel(logging.INFO)
-    fmt = logging.Formatter("%(asctime)s %(levelname)s %(name)s: %(message)s")
-    sh.setFormatter(fmt)
-    logger.addHandler(sh)
-    logger.propagate = False
-
-
 def isolate_vocals(
     input_audio_path: Path,
     output_dir: Path,
@@ -74,7 +61,7 @@ def isolate_vocals(
             try:
                 m.use_train_segment = False
             except Exception:
-                logger.exception("Failed to disable use_train_segment on submodel[%d]", i)
+                pass
     
 
     _, separated = separator.separate_audio_file(input_audio_path)

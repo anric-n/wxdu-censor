@@ -138,7 +138,7 @@ The dataset will be cloned to `data/jamendolyrics/` from:
     https://huggingface.co/datasets/jamendolyrics/jamendolyrics
     ```
 
-Right now running `data/eval.py` will output the results for `en_transcription_comparison.csv` to `transcription_comparison.csv`. Additonally, CSV files for each song comparing their transcriptions at the word level will populate in `data/normalize_transcripts`.
+Right now running `data/eval.py` will output the results for `en_transcription_comparison.csv` to `data/eval/transcription_comparison.csv`. Additonally, CSV files for each song comparing their transcriptions at the word level will populate in `data/eval/normalize_transcripts`.
 To get results for German, modify line 26 in `data/eval.py` from
     ```python
     for audio_file in sorted(project_root.glob("data/jamendolyrics/subsets/en/mp3/*.mp3")):

@@ -56,6 +56,6 @@ However, the JamandoLyrics dataset allows us to evaluate the automatic lyric ali
 | Root Mean-Squared Error (RMSE, s)<br>of Word-Start Timestamps <br>(For correct words)  	| 0.609   	| 0.446  	|
 | RMSE of Word-End Timestamps (s)                                                        	| 0.568   	| 0.265  	|
 
-
+More detailed evaluation metrics can be found in this [Google Drive](https://drive.google.com/drive/folders/1FN1GMNgh-ZXHhlEAexvp4p-SD99q8mo-)
 
 

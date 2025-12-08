@@ -23,7 +23,7 @@ def main():
     
     results = []
     
-    for audio_file in sorted(project_root.glob("data/jamendolyrics/subsets/en/mp3/*.mp3")):
+    for audio_file in sorted(project_root.glob("data/jamendolyrics/subsets/en/mp3/*.mp3"))[:1]:
         file_stem = audio_file.stem
         logging.info(f"Processing file: {file_stem}")
 
@@ -46,7 +46,7 @@ def main():
             try:
                 vocals_path, instrumental_path, _ = isolate_vocals(
                     input_audio_path=audio_file,
-                    output_dir=project_root / "data/isolated_stems"
+                    output_dir=project_root / "data/eval/isolated_stems"
                 )
                 logging.info(f"Isolated vocals saved to: {vocals_path}")
             except Exception as demucs_error:
@@ -82,7 +82,7 @@ def main():
             actual_norm = normalize_transcript_words(actual_words, key='text')
 
             # Save normalized transcripts to CSV for inspection / reuse
-            norm_dir = project_root / "data/normalized_transcripts"
+            norm_dir = project_root / "data/eval/normalized_transcripts"
             norm_dir.mkdir(parents=True, exist_ok=True)
             csv_path = norm_dir / f"{file_stem}.csv"
             try:
@@ -128,7 +128,7 @@ def main():
         df = pd.DataFrame(results)
         
         # Save results
-        output_path = project_root / "data/transcription_comparison.csv"
+        output_path = project_root / "data/eval/transcription_comparison.csv"
         df.to_csv(output_path, index=False)
         logging.info(f"\nResults saved to: {output_path}")
         

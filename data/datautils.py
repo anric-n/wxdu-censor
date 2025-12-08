@@ -152,10 +152,6 @@ def calculate_timing_rmse(whisper_words: List[Dict], actual_words: List[Dict]) -
     }
 
 
-def combine_lyrics_annotations():
-    """Placeholder for combining lyrics annotations."""
-    pass
-
 def normalize_transcript_words(words: List[Dict[str, Any]], key: str) -> List[Dict[str, Any]]:
     """Normalize transcript words by lowercasing and removing punctuation.
     

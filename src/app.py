@@ -205,7 +205,7 @@ st.set_page_config(
 st.title("🎵 Music Autocensor")
 st.markdown(
     "Automatically censor music using Demucs, Whisper, ChatGPT, and FFmpeg. "
-    "Upload a music file and let AI identify and silence inappropriate words."
+    "Upload music files and let AI identify and silence inappropriate words so they are safe to pplay on public radio."
 )
 
 # Sidebar for configuration
@@ -255,10 +255,10 @@ tab1, tab2 = st.tabs(["Process Audio", "Few-shot Examples"])
 with tab1:
     # File upload
     uploaded_files = st.file_uploader(
-        "Upload Audio File",
+        "Upload Audio File(s)",
         type=["mp3", "wav", "flac", "m4a", "ogg"],
         accept_multiple_files=True,
-        help="Upload a music file(s) to process"
+        help="Upload music file(s) to process"
     )
     
     # Display download table if outputs exist from previous processing
@@ -449,11 +449,5 @@ Output JSON:
     if st.button("💾 Save Examples", use_container_width=True):
         st.session_state["few_shot_examples"] = few_shot_examples
         st.success("✅ Examples saved! They will be used in the next processing run.")
-    
-    st.markdown("### Tips:")
-    st.markdown(
-        "- Include examples that show both what to censor and what NOT to censor\n"
-        "- Be specific about the format (timestamps, word matching)\n"
-        "- The examples will be included in the ChatGPT prompt to guide its behavior"
-    )
+
 

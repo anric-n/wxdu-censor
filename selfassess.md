@@ -58,6 +58,8 @@
 
 6. Design choices are explicitly justified in videos or documentation
 
-7. None of the major components awarded rubric item credit in the machine learning category are superfluous to the larger goals of the project (no unrelated "point collecting")
+7. Evaluation metrics directly measure the stated project objectives
 
-8. Clean codebase with readable code and no extraneous, stale, or unused files
+8. None of the major components awarded rubric item credit in the machine learning category are superfluous to the larger goals of the project (no unrelated "point collecting")
+
+9. Clean codebase with readable code and no extraneous, stale, or unused files
