@@ -2,12 +2,8 @@ import sys
 from pathlib import Path
 import logging
 import pandas as pd
-import json
 import time
 import csv
-from typing import Dict, List, Any
-import re
-import difflib
 
 logging.basicConfig(level=logging.INFO)
 # Add project root to path
@@ -16,7 +12,7 @@ sys.path.insert(0, str(project_root))
 
 from models.demucs_processor import isolate_vocals
 from models.whisper_processor import transcribe_vocals
-from data.datautils import load_metadata_jsonl, normalize_word, calculate_word_error_rate, calculate_timing_rmse, normalize_transcript_words
+from data.datautils import load_metadata_jsonl, calculate_word_error_rate, calculate_timing_rmse, normalize_transcript_words
 
 
 

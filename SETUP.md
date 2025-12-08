@@ -113,4 +113,39 @@ The app will open automatically in your browser at:
     ```
 
 
+# Evaluation Data Replication
+The typical `load_dataset` method used to load Hugging-Face datasets does not work for this project, as there is a dependency conlict between `torchcodec` and the legacy version of `torchaudio` needed to run Demucs. Instead, the dataset, including the audio files must be cloned from the Github repository through a submodule. 
 
+First, install Git LFS if you haven't already:
+    ```bash
+    git lfs install
+    ```
+
+Then clone the repository with submodules:
+    ```bash
+    git clone --recurse-submodules https://github.com/anric-n/wxdu-censor.git
+    cd wxdu-censor
+    ```
+
+Or if you already cloned without submodules, initialize and update:
+    ```bash
+    cd data
+    git submodule update --init
+    ```
+
+The dataset will be cloned to `data/jamendolyrics/` from:
+    ```
+    https://huggingface.co/datasets/jamendolyrics/jamendolyrics
+    ```
+
+Right now running `data/eval.py` will output the results for `en_transcription_comparison.csv` to `transcription_comparison.csv`. Additonally, CSV files for each song comparing their transcriptions at the word level will populate in `data/normalize_transcripts`.
+To get results for German, modify line 26 in `data/eval.py` from
+    ```python
+    for audio_file in sorted(project_root.glob("data/jamendolyrics/subsets/en/mp3/*.mp3")):
+
+    ```
+to
+    ```python
+    for audio_file in sorted(project_root.glob("data/jamendolyrics/subsets/de/mp3/*.mp3")):
+
+    ```

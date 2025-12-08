@@ -45,33 +45,16 @@ The app uses Demucs to isolate vocals, Whisper to transcribe the vocals with tim
 ## Video Links
 
 ## Evaluation
+Full pipeline evaluation metrics are not available, as there is no opensource dataset of words censored in clean versions of songs.
+However, the JamandoLyrics dataset allows us to evaluate the automatic lyric alingment retrived from the transcripts of the songs as modeled by Demucs and Whisper. 
 
-
-TRANSCRIPTION COMPARISON SUMMARY
-
-Successfully processed files: 20
-
-Word Error Rate (WER) Statistics:
-  Average WER: 0.551
-  Min WER: 0.093
-  Max WER: 1.429
-  Total correct matches: 3207
-  Total substitutions: 1661
-  Total deletions: 825
-  Total insertions: 494
-
-Timing Accuracy (MSE in seconds²):
-  Average Start MSE: 424.694781
-  Average End MSE: 419.645329
-  Average Start Time Diff: 5.071354s
-  Average End Time Diff: 5.001832s
-  Avg matched words with timing: 160.3
-
-Average processing time:
-  Average Demucs time: 12.292s
-  Average Whisper time: 12.983s
-
-
+| Evaluation Metric (n = 20, JamendoLyrics Dataset)                                      	| English 	| German 	|
+|----------------------------------------------------------------------------------------	|---------	|--------	|
+| Median Demucs Inference Time (s)                                                       	| 11.807  	| 12.817 	|
+| Median Whisper Inference Time (s)                                                      	| 11.846  	| 11.717 	|
+| [Word Error Rate](https://en.wikipedia.org/wiki/Word_error_rate)                       	| 0.426   	| 0.330  	|
+| Root Mean-Squared Error (RMSE, s)<br>of Word-Start Timestamps <br>(For correct words)  	| 0.609   	| 0.446  	|
+| RMSE of Word-End Timestamps (s)                                                        	| 0.568   	| 0.265  	|
 
 
 

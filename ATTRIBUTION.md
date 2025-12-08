@@ -19,7 +19,7 @@
 [Documentation](https://docs.streamlit.io/)
 
 ## Data:
-Dataset used to evaluate Whisper / Demucs automatic lyrics alignment comes from the JamendoLyrics MultiLang dataset:
+The dataset used to evaluate Whisper / Demucs automatic lyrics alignment comes from the JamendoLyrics MultiLang dataset:
 
 The dataset was introduced in the ICASSP 2023 paper (full citation below):
 Similarity-based Audio-Lyrics Alignment of Multiple Languages
