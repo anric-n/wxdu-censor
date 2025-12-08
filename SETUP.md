@@ -102,15 +102,15 @@ OPENAI_API_KEY = "your_key_here"
 
 Launch the Streamlit app:
 
-    ```bash
-    streamlit run src/app.py
-    ```
+```bash
+streamlit run src/app.py
+```
 
 The app will open automatically in your browser at:
 
-    ```
-    http://localhost:8501
-    ```
+```
+http://localhost:8501
+```
 
 
 # Evaluation Data Replication
