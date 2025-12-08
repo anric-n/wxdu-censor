@@ -27,7 +27,7 @@ def main():
     
     results = []
     
-    for audio_file in sorted(project_root.glob("data/jamendolyrics/subsets/de/mp3/*.mp3"))[:1]:  # Process first one for testing
+    for audio_file in sorted(project_root.glob("data/jamendolyrics/subsets/de/mp3/*.mp3"))
         file_stem = audio_file.stem
         logging.info(f"Processing file: {file_stem}")
 
