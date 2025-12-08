@@ -27,7 +27,7 @@ def main():
     
     results = []
     
-    for audio_file in sorted(project_root.glob("data/jamendolyrics/subsets/de/mp3/*.mp3"))
+    for audio_file in sorted(project_root.glob("data/jamendolyrics/subsets/en/mp3/*.mp3")):
         file_stem = audio_file.stem
         logging.info(f"Processing file: {file_stem}")
 
@@ -60,7 +60,6 @@ def main():
             demucs_end = time.perf_counter()
             demucs_time = demucs_end - demucs_start
             
-            # Transcribe vocals
             # Transcribe vocals (measure time)
             whisper_start = time.perf_counter()
             try:
