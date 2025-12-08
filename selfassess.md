@@ -16,6 +16,23 @@
 
 8. Built multi-stage ML pipeline connecting outputs of one model to inputs of another (e.g., vision model to a language model to a text-to-speech model) (7 pts) - app.py, particularly in lines 112 - 217
 
+9. Measured and reported inference time, throughput, or computational efficiency (3 pts)
+eval.py, also see README.md and drive folders for csv outputs.
+
+10. Used at least three distinct and appropriate evaluation metrics for your task (3 pts)
+eval.py, also see drive folders for csv outputs and README.md. 
+
+11. Analyzed model behavior on edge cases or out-of-distribution examples (5 pts)
+README.md
+
+12. Conducted both qualitative and quantitative evaluation with thoughtful discussion (5 pts)
+README.md, also see videos
+
+13. Modular code design with reusable functions and classes rather than monolithic scripts (3 pts)
+
+
+
+
 
 
 ## Following Directions

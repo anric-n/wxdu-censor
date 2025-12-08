@@ -3,3 +3,5 @@ __pycache__/
 venv/
 selfaccess.md
 data/eval/
+data/isolated_stems/
+data/normalized_transcripts/

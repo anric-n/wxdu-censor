@@ -103,7 +103,7 @@ OPENAI_API_KEY = "your_key_here"
 Launch the Streamlit app:
 
     ```bash
-    streamlit run app.py
+    streamlit run src/app.py
     ```
 
 The app will open automatically in your browser at:
@@ -138,12 +138,14 @@ The dataset will be cloned to `data/jamendolyrics/` from:
     https://huggingface.co/datasets/jamendolyrics/jamendolyrics
     ```
 
-Right now running `data/eval.py` will output the results for `en_transcription_comparison.csv` to `data/eval/transcription_comparison.csv`. Additonally, CSV files for each song comparing their transcriptions at the word level will populate in `data/eval/normalize_transcripts`.
-To get results for German, modify line 26 in `data/eval.py` from
+Right now running `src/eval.py` will output the results for the first english song alphabetically for `en_transcription_comparison.csv` to `data/eval/transcription_comparison.csv`. Additonally, CSV files for each song comparing their transcriptions at the word level will populate in `data/eval/normalize_transcripts`.
+To get results for all 20 songs in English, modify line 26 in `src/eval.py` to
+to
     ```python
     for audio_file in sorted(project_root.glob("data/jamendolyrics/subsets/en/mp3/*.mp3")):
 
     ```
+Similarly, to get results for German, modify line 26 in `src/eval.py` to
 to
     ```python
     for audio_file in sorted(project_root.glob("data/jamendolyrics/subsets/de/mp3/*.mp3")):

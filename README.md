@@ -45,8 +45,11 @@ The app uses Demucs to isolate vocals, Whisper to transcribe the vocals with tim
 ## Video Links
 
 ## Evaluation
+
+### Quantitative evaluation
 Full pipeline evaluation metrics are not available, as there is no opensource dataset of words censored in clean versions of songs.
-However, the JamandoLyrics dataset allows us to evaluate the automatic lyric alingment retrived from the transcripts of the songs as modeled by Demucs and Whisper. 
+However, the JamandoLyrics dataset allows us to evaluate the automatic lyric alingment retrived from the transcripts of the songs as modeled by Demucs and Whisper.
+
 
 | Evaluation Metric (n = 20, JamendoLyrics Dataset)                                      	| English 	| German 	|
 |----------------------------------------------------------------------------------------	|---------	|--------	|
@@ -55,6 +58,21 @@ However, the JamandoLyrics dataset allows us to evaluate the automatic lyric ali
 | [Word Error Rate](https://en.wikipedia.org/wiki/Word_error_rate)                       	| 0.426   	| 0.330  	|
 | Root Mean-Squared Error (RMSE, s)<br>of Word-Start Timestamps <br>(For correct words)  	| 0.609   	| 0.446  	|
 | RMSE of Word-End Timestamps (s)                                                        	| 0.568   	| 0.265  	|
+
+The word error rate represents the proportion of words in the transcript that were correctly identified, which means that the Demucs -> Whisper pipeline was able to capture around 57% of the words from the English dataset and 67% of the words from the German dataset. However, this word-error rate varied dramatically between songs. Several songs in the German database had a word error rate less than 0.200, while one song in the English database, `Songwriterz_-_Back_In_Time` actually had a word error rate greater than 1. 
+
+The inference time shown in the table above was gathered by running the pipeline in Google Colab on their T4 GPUS and the 2025.07 runtime version. The songs in that dataset vary in length from around 2:50 to 5:00 minutes long, with most between 3 and 4 minutes.
+
+Performance on non-CUDA systems, such as with my Macbook Pro with an M3 and 8GB of RAM, is much slower. While Demucs is able to utilize the `mps` backend, `faster-whisper` does not support mps. Compared to the GPU, my system takes around 2-3x as long to run Demucs source separation and 5-10x as long to run Whisper transcription. 
+
+### Qualitative evaluation
+Qualitiatively, the largest chokepoint within the pipeline is the Whisper model. This is likely because of the use of zero-shot generalization to generate transcripts from the source-separted vocals. When analysing the poorest performing audio files, it was clear that many vocalists do not enunciate their words as clearly as in normal speech. Because no fine-tuning was performed on the model, I believe that difference made it difficult for Whisper to identify phonemes. 
+
+### Error cases
+The most commmon error case that occurs is when there is no vocals in the audio file. Demucs cannot identify if an audio file has / does not have vocals. In these cirumstances, Demucs produces an vocal file that consists mostly of silence with a bit of noise. That noise causes Whisper to hallucinate, often producing a transcript that consists of the words "Thank you" repeated many times. In this case, the final result is simply the original audio file.
+
+The repeated "Thank you" hallucination / failure case extends to songs with actual vocals that do not start at the beginning of the song. The threshold appears to be around 30-40 seconds for this halucination to occur, it gets progressivly worse the longer the silence is. If enough halucinated 'Thank you's appear, then no actual vocals are transcribed, as Whisper is a transformer model that attends to its own previous transcriptions. 
+
 
 More detailed evaluation metrics can be found in this [Google Drive](https://drive.google.com/drive/folders/1FN1GMNgh-ZXHhlEAexvp4p-SD99q8mo-)
 
