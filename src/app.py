@@ -191,262 +191,265 @@ def create_zip_from_outputs(output_files: Dict[str, List[str]]) -> io.BytesIO:
     zip_buffer.seek(0)
     return zip_buffer
 
+def main():
 
-# Initialize output tracking
-initialize_output_tracking()
+    # Initialize output tracking
+    initialize_output_tracking()
 
-# Page configuration
-st.set_page_config(
-    page_title="Music Autocensor",
-    page_icon="🎵",
-    layout="wide"
-)
-
-st.title("🎵 Music Autocensor")
-st.markdown(
-    "Automatically censor music using Demucs, Whisper, ChatGPT, and FFmpeg. "
-    "Upload music files and let AI identify and silence inappropriate words so they are safe to play on public radio."
-)
-
-# Sidebar for configuration
-with st.sidebar:
-    st.header("Configuration")
-    
-    # Model selection
-    demucs_model = st.selectbox(
-        "Demucs Model",
-        ["htdemucs", "htdemucs_ft"],
-        index=0
+    # Page configuration
+    st.set_page_config(
+        page_title="Music Autocensor",
+        page_icon="🎵",
+        layout="wide"
     )
-    
-    whisper_model = st.selectbox(
-        "Whisper Model",
-        ["turbo", "large"],
-        index=0
-    )
-    
-    chatgpt_model = st.selectbox(
-        "ChatGPT Model",
-        ["gpt-5-mini", "gpt-5.1"],
-        index=0,
-    )
-    
-    silence_padding = st.slider(
-        "Silence Padding (seconds)",
-        min_value=0.0,
-        max_value=0.5,
-        value=0.0,
-        step=0.05,
-        help="Additional silence before and after censored words."
-    )
-    
-    # API key check
-    api_key_status = "✅ Set" if st.secrets["OPENAI_API_KEY"] else "❌ Not set"
-    st.markdown(f"**OpenAI API Key:** {api_key_status}")
-    if not st.secrets["OPENAI_API_KEY"]:
-        st.warning(
-            "Please set the OPENAI_API_KEY environment variable. "
-            "You can do this by adding 'OPENAI_API_KEY' to the .streamlit/secrets.toml file."
-        )
 
-# Main content
-tab1, tab2 = st.tabs(["Process Audio", "Few-shot Examples"])
-
-with tab1:
-    # File upload
-    uploaded_files = st.file_uploader(
-        "Upload Audio File(s)",
-        type=["mp3", "wav", "flac", "m4a", "ogg"],
-        accept_multiple_files=True,
-        help="Upload music file(s) to process"
-    )
-    
-    # Display download table if outputs exist from previous processing
-    if "output_files" in st.session_state and any(st.session_state.output_files.get("Original Audio", [])):
-        display_download_table(st.session_state.output_files)
-    
-    if uploaded_files is not None:
-
-        # Clear previous outputs when starting new processing
-        if st.button("🚀 Process Audio", type="primary", use_container_width=True):
-            # Clear previous outputs
-            clear_output_tracking()
-            initialize_output_tracking()
-
-            # Check API key
-            if not st.secrets["OPENAI_API_KEY"]:
-                st.error("❌ OPENAI_API_KEY environment variable is not set!")
-                st.stop()
-
-            progress_bar = st.progress(0)
-            file_processing = st.empty()
-            status_text = st.empty()
-
-            # Process each uploaded file
-            for index, uploaded_file in enumerate(uploaded_files):
-                progress_addder = index / len(uploaded_files) # tracks percentage of files processed
-                file_processing.text(f"Processing file {index + 1} of {len(uploaded_files)}: {uploaded_file.name}")
-                
-                # Create a subdirectory for this file's outputs
-                file_output_dir = st.session_state.output_dir / f"file_{index}"
-                file_output_dir.mkdir(parents=True, exist_ok=True)
-
-                try:
-                    # Save uploaded file to persistent directory
-                    input_audio_path = file_output_dir / uploaded_file.name
-                    with open(input_audio_path, "wb") as f:
-                        f.write(uploaded_file.getbuffer())
-                    
-                    # Track original audio path
-                    st.session_state.output_files["Original Audio"].append(str(input_audio_path))
-                    # Step 1: Isolate vocals with Demucs
-                    status_text.text(f"🎤 Step 1/5: Isolating vocals with Demucs... ({uploaded_file.name})")
-                    progress_bar.progress((0.1 / len(uploaded_files)) + progress_addder)
-                    
-                    separated_dir = file_output_dir / "separated"
-                    vocals_path, instrumental_path, separated_stems = isolate_vocals(
-                        input_audio_path,
-                        separated_dir,
-                        model=demucs_model
-                    )
-                    
-                    # Copy vocals and instrumental to main output directory for easy access
-                    saved_vocals_path = file_output_dir / "vocals.wav"
-                    saved_instrumental_path = file_output_dir / "instrumental.wav"
-                    shutil.copy2(vocals_path, saved_vocals_path)
-                    shutil.copy2(instrumental_path, saved_instrumental_path)
-                    
-                    st.session_state.output_files["Vocals"].append(str(saved_vocals_path))
-                    st.session_state.output_files["Instrumental"].append(str(saved_instrumental_path))
-                    
-                    progress_bar.progress((0.3 / len(uploaded_files)) + progress_addder)
-                    
-                    # Step 2: Transcribe vocals with Whisper
-                    status_text.text(f"📝 Step 2/5: Transcribing vocals with Whisper... ({uploaded_file.name})")
-                    
-                    transcription = transcribe_vocals(
-                        vocals_path,
-                        model_size=whisper_model
-                    )
-                    
-                    # Save transcription to file
-                    transcription_path = file_output_dir / "transcription.txt"
-                    with open(transcription_path, "w", encoding="utf-8") as f:
-                        f.write(f"Language: {transcription.get('language', 'unknown')}\n")
-                        f.write(f"Total words: {len(transcription['words'])}\n\n")
-                        f.write("Full transcription:\n")
-                        f.write(transcription["text"])
-                        f.write("\n\nWord-level timestamps:\n")
-                        for word in transcription["words"]:
-                            f.write(f"[{word['start']:.2f}s-{word['end']:.2f}s] {word['word']}\n")
-                    
-                    st.session_state.output_files["Transcription"].append(str(transcription_path))
-                    progress_bar.progress((0.5 / len(uploaded_files)) + progress_addder)
-                    
-                    # Step 3: Get few-shot examples
-                    status_text.text(f"🤖 Step 3/5: Analyzing with ChatGPT... ({uploaded_file.name})")
-                    progress_bar.progress((0.6 / len(uploaded_files)) + progress_addder)
-                    
-                    few_shot_examples = st.session_state.get("few_shot_examples", "")
-                    
-                    censored_words = censor_with_chatgpt(
-                        transcription["words"],
-                        few_shot_examples=few_shot_examples if few_shot_examples else None,
-                        model=chatgpt_model
-                    )
-                    
-                    # Save censored words to JSON file
-                    censored_words_path = file_output_dir / "censored_words.json"
-                    if censored_words:
-                        with open(censored_words_path, "w", encoding="utf-8") as f:
-                            json.dump(censored_words, f, indent=2)
-                        st.session_state.output_files["Censored Words"].append(str(censored_words_path))
-                    else:
-                        # No censored words, add empty string
-                        st.session_state.output_files["Censored Words"].append("")
-                    
-                    progress_bar.progress((0.8 / len(uploaded_files)) + progress_addder)
-                    
-                    # Step 5: Process audio with FFmpeg
-                    status_text.text(f"🔇 Step 4/5: Silencing vocals and recombining... ({uploaded_file.name})")
-                    
-                    output_audio_path = file_output_dir / "censored_output.wav"
-                    process_censored_audio(
-                        vocals_path,
-                        instrumental_path,
-                        censored_words,
-                        output_audio_path,
-                        padding=silence_padding
-                    )
-                    
-                    st.session_state.output_files["Censored Audio"].append(str(output_audio_path))
-                    progress_bar.progress((1.0 / len(uploaded_files)) + progress_addder)
-                    
-                except Exception as e:
-                    st.error(f"❌ Error during processing {uploaded_file.name}: {str(e)}")
-                    st.exception(e)
-                    # Ensure all columns have the same length by adding empty strings for missing outputs
-                    current_length = len(st.session_state.output_files["Original Audio"])
-                    expected_length = index + 1
-                    
-                    # Fill any missing entries with empty strings to keep columns aligned
-                    for key in st.session_state.output_files:
-                        while len(st.session_state.output_files[key]) < expected_length:
-                            st.session_state.output_files[key].append("")
-                    continue
-            
-            file_processing.text("")
-            status_text.text("")
-            st.success("✅ All files processed!")
-            
-            # Display download table
-            display_download_table(st.session_state.output_files) 
-with tab2:
-    st.header("Few-shot Examples")
+    st.title("🎵 Music Autocensor")
     st.markdown(
-        "Provide few-shot examples to help ChatGPT identify words to censor. "
-        "These examples should show the expected input/output format."
+        "Automatically censor music using Demucs, Whisper, ChatGPT, and FFmpeg. "
+        "Upload music files and let AI identify and silence inappropriate words so they are safe to play on public radio."
     )
-    
-    default_examples = """Example 1:
-Input transcript:
-[0.5s-0.8s] you
-[1.0s-1.3s] should
-[1.5s-1.8s] go
-[2.0s-2.3s] and
-[2.5s-2.8s] fuck
-[3.0s-3.3s] yourself
 
-Output JSON:
-{
-  "words": [
-    { "word": "fuck", "start": 2.5, "end": 2.8 }
-  ]
-}
+    # Sidebar for configuration
+    with st.sidebar:
+        st.header("Configuration")
+        
+        # Model selection
+        demucs_model = st.selectbox(
+            "Demucs Model",
+            ["htdemucs", "htdemucs_ft"],
+            index=0
+        )
+        
+        whisper_model = st.selectbox(
+            "Whisper Model",
+            ["turbo", "large"],
+            index=0
+        )
+        
+        chatgpt_model = st.selectbox(
+            "ChatGPT Model",
+            ["gpt-5-mini", "gpt-5.1"],
+            index=0,
+        )
+        
+        silence_padding = st.slider(
+            "Silence Padding (seconds)",
+            min_value=0.0,
+            max_value=0.5,
+            value=0.0,
+            step=0.05,
+            help="Additional silence before and after censored words."
+        )
+        
+        # API key check
+        api_key_status = "✅ Set" if st.secrets["OPENAI_API_KEY"] else "❌ Not set"
+        st.markdown(f"**OpenAI API Key:** {api_key_status}")
+        if not st.secrets["OPENAI_API_KEY"]:
+            st.warning(
+                "Please set the OPENAI_API_KEY environment variable. "
+                "You can do this by adding 'OPENAI_API_KEY' to the .streamlit/secrets.toml file."
+            )
 
-Example 2:
-Input transcript:
-[0.2s-0.5s] what
-[0.6s-0.9s] the
-[1.0s-1.4s] frick
-[1.5s-1.8s] is
-[2.0s-2.3s] this
+    # Main content
+    tab1, tab2 = st.tabs(["Process Audio", "Few-shot Examples"])
 
-Output JSON:
-{
-  "words": []
-}"""
-    
-    few_shot_examples = st.text_area(
-        "Few-shot Examples",
-        value=st.session_state.get("few_shot_examples", default_examples),
-        height=400,
-        help="Enter examples showing how to identify words to censor. "
-             "Include both input transcripts and expected JSON output."
-    )
-    
-    if st.button("💾 Save Examples", use_container_width=True):
-        st.session_state["few_shot_examples"] = few_shot_examples
-        st.success("✅ Examples saved! They will be used in the next processing run.")
+    with tab1:
+        # File upload
+        uploaded_files = st.file_uploader(
+            "Upload Audio File(s)",
+            type=["mp3", "wav", "flac", "m4a", "ogg"],
+            accept_multiple_files=True,
+            help="Upload music file(s) to process"
+        )
+        
+        # Display download table if outputs exist from previous processing
+        if "output_files" in st.session_state and any(st.session_state.output_files.get("Original Audio", [])):
+            display_download_table(st.session_state.output_files)
+        
+        if uploaded_files is not None:
 
+            # Clear previous outputs when starting new processing
+            if st.button("🚀 Process Audio", type="primary", use_container_width=True):
+                # Clear previous outputs
+                clear_output_tracking()
+                initialize_output_tracking()
+
+                # Check API key
+                if not st.secrets["OPENAI_API_KEY"]:
+                    st.error("❌ OPENAI_API_KEY environment variable is not set!")
+                    st.stop()
+
+                progress_bar = st.progress(0)
+                file_processing = st.empty()
+                status_text = st.empty()
+
+                # Process each uploaded file
+                for index, uploaded_file in enumerate(uploaded_files):
+                    progress_addder = index / len(uploaded_files) # tracks percentage of files processed
+                    file_processing.text(f"Processing file {index + 1} of {len(uploaded_files)}: {uploaded_file.name}")
+                    
+                    # Create a subdirectory for this file's outputs
+                    file_output_dir = st.session_state.output_dir / f"file_{index}"
+                    file_output_dir.mkdir(parents=True, exist_ok=True)
+
+                    try:
+                        # Save uploaded file to persistent directory
+                        input_audio_path = file_output_dir / uploaded_file.name
+                        with open(input_audio_path, "wb") as f:
+                            f.write(uploaded_file.getbuffer())
+                        
+                        # Track original audio path
+                        st.session_state.output_files["Original Audio"].append(str(input_audio_path))
+                        # Step 1: Isolate vocals with Demucs
+                        status_text.text(f"🎤 Step 1/5: Isolating vocals with Demucs... ({uploaded_file.name})")
+                        progress_bar.progress((0.1 / len(uploaded_files)) + progress_addder)
+                        
+                        separated_dir = file_output_dir / "separated"
+                        vocals_path, instrumental_path, separated_stems = isolate_vocals(
+                            input_audio_path,
+                            separated_dir,
+                            model=demucs_model
+                        )
+                        
+                        # Copy vocals and instrumental to main output directory for easy access
+                        saved_vocals_path = file_output_dir / "vocals.wav"
+                        saved_instrumental_path = file_output_dir / "instrumental.wav"
+                        shutil.copy2(vocals_path, saved_vocals_path)
+                        shutil.copy2(instrumental_path, saved_instrumental_path)
+                        
+                        st.session_state.output_files["Vocals"].append(str(saved_vocals_path))
+                        st.session_state.output_files["Instrumental"].append(str(saved_instrumental_path))
+                        
+                        progress_bar.progress((0.3 / len(uploaded_files)) + progress_addder)
+                        
+                        # Step 2: Transcribe vocals with Whisper
+                        status_text.text(f"📝 Step 2/5: Transcribing vocals with Whisper... ({uploaded_file.name})")
+                        
+                        transcription = transcribe_vocals(
+                            vocals_path,
+                            model_size=whisper_model
+                        )
+                        
+                        # Save transcription to file
+                        transcription_path = file_output_dir / "transcription.txt"
+                        with open(transcription_path, "w", encoding="utf-8") as f:
+                            f.write(f"Language: {transcription.get('language', 'unknown')}\n")
+                            f.write(f"Total words: {len(transcription['words'])}\n\n")
+                            f.write("Full transcription:\n")
+                            f.write(transcription["text"])
+                            f.write("\n\nWord-level timestamps:\n")
+                            for word in transcription["words"]:
+                                f.write(f"[{word['start']:.2f}s-{word['end']:.2f}s] {word['word']}\n")
+                        
+                        st.session_state.output_files["Transcription"].append(str(transcription_path))
+                        progress_bar.progress((0.5 / len(uploaded_files)) + progress_addder)
+                        
+                        # Step 3: Get few-shot examples
+                        status_text.text(f"🤖 Step 3/5: Analyzing with ChatGPT... ({uploaded_file.name})")
+                        progress_bar.progress((0.6 / len(uploaded_files)) + progress_addder)
+                        
+                        few_shot_examples = st.session_state.get("few_shot_examples", "")
+                        
+                        censored_words = censor_with_chatgpt(
+                            transcription["words"],
+                            few_shot_examples=few_shot_examples if few_shot_examples else None,
+                            model=chatgpt_model
+                        )
+                        
+                        # Save censored words to JSON file
+                        censored_words_path = file_output_dir / "censored_words.json"
+                        if censored_words:
+                            with open(censored_words_path, "w", encoding="utf-8") as f:
+                                json.dump(censored_words, f, indent=2)
+                            st.session_state.output_files["Censored Words"].append(str(censored_words_path))
+                        else:
+                            # No censored words, add empty string
+                            st.session_state.output_files["Censored Words"].append("")
+                        
+                        progress_bar.progress((0.8 / len(uploaded_files)) + progress_addder)
+                        
+                        # Step 5: Process audio with FFmpeg
+                        status_text.text(f"🔇 Step 4/5: Silencing vocals and recombining... ({uploaded_file.name})")
+                        
+                        output_audio_path = file_output_dir / "censored_output.wav"
+                        process_censored_audio(
+                            vocals_path,
+                            instrumental_path,
+                            censored_words,
+                            output_audio_path,
+                            padding=silence_padding
+                        )
+                        
+                        st.session_state.output_files["Censored Audio"].append(str(output_audio_path))
+                        progress_bar.progress((1.0 / len(uploaded_files)) + progress_addder)
+                        
+                    except Exception as e:
+                        st.error(f"❌ Error during processing {uploaded_file.name}: {str(e)}")
+                        st.exception(e)
+                        # Ensure all columns have the same length by adding empty strings for missing outputs
+                        current_length = len(st.session_state.output_files["Original Audio"])
+                        expected_length = index + 1
+                        
+                        # Fill any missing entries with empty strings to keep columns aligned
+                        for key in st.session_state.output_files:
+                            while len(st.session_state.output_files[key]) < expected_length:
+                                st.session_state.output_files[key].append("")
+                        continue
+                
+                file_processing.text("")
+                status_text.text("")
+                st.success("✅ All files processed!")
+                
+                # Display download table
+                display_download_table(st.session_state.output_files) 
+    with tab2:
+        st.header("Few-shot Examples")
+        st.markdown(
+            "Provide few-shot examples to help ChatGPT identify words to censor. "
+            "These examples should show the expected input/output format."
+        )
+        
+        default_examples = """Example 1:
+    Input transcript:
+    [0.5s-0.8s] you
+    [1.0s-1.3s] should
+    [1.5s-1.8s] go
+    [2.0s-2.3s] and
+    [2.5s-2.8s] fuck
+    [3.0s-3.3s] yourself
+
+    Output JSON:
+    {
+    "words": [
+        { "word": "fuck", "start": 2.5, "end": 2.8 }
+    ]
+    }
+
+    Example 2:
+    Input transcript:
+    [0.2s-0.5s] what
+    [0.6s-0.9s] the
+    [1.0s-1.4s] frick
+    [1.5s-1.8s] is
+    [2.0s-2.3s] this
+
+    Output JSON:
+    {
+    "words": []
+    }"""
+        
+        few_shot_examples = st.text_area(
+            "Few-shot Examples",
+            value=st.session_state.get("few_shot_examples", default_examples),
+            height=400,
+            help="Enter examples showing how to identify words to censor. "
+                "Include both input transcripts and expected JSON output."
+        )
+        
+        if st.button("💾 Save Examples", use_container_width=True):
+            st.session_state["few_shot_examples"] = few_shot_examples
+            st.success("✅ Examples saved! They will be used in the next processing run.")
+
+if __name__ == "__main__":
+    main()
 
