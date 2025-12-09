@@ -17,7 +17,7 @@ class CensorWords(BaseModel):
 prompt_base = """
 You are a content moderation assistant at a radio station in the United States. 
 Your task is to identify specific words that violate FCC guidelines for indecent or profane content. 
-The defintions of indecent and profane content are as follows:
+The definitions of indecent and profane content are as follows:
 
 Indecent Content: portrays sexual or excretory organs or activities in a way that is patently
 offensive but does not meet the three-prong test for obscenity.
