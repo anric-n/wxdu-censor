@@ -44,4 +44,4 @@ Guide from Public Radio Exchange (PRX) added to prompt for further guidance:
 [Source](https://help.prx.org/hc/en-us/articles/360044988133-A-guide-to-broadcast-obscenities-and-issuing-content-advisories)
 
 ## AI-Generation Usage
-Among other uses, an AI agent was used to create the baseline `app.py`, resolve dependency conflicts, create the functions in `data/datautils.py` and to debug the use_train_segment issue in `demucs_proccesor.py`.
+Among other uses, an AI agent was used to create the baseline `app.py`, resolve dependency conflicts, create the helper functions in `data/datautils.py` and `app.py`, and to debug the use_train_segment issue in `demucs_proccesor.py`.
