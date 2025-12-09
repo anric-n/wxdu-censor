@@ -79,6 +79,8 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+If `reqiurements.txt` does not work for whatever reason, try `reqiurements_detailed.txt`. 
+
 ## 4. Adding Your OpenAI API Key
 
 The app reads your API key from Streamlit secrets.
